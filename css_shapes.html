@@ -1,0 +1,396 @@
+<html>
+	<head>
+		<title> tape dispenser </title>
+		<style type="text/css">
+			
+			#winebody {
+				width: 120px;
+				background: black;
+   				position:relative;
+				}
+			
+			.rectangle {
+				height: 300px;
+				top: 250px;
+				left: 180px;
+				-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   				border-radius:         10%  10%  20%  20%  / 60%   60%   20%  20%;
+				}
+				
+			.base {
+				height: 80px;
+				width: 107px;
+				background-color: black;
+				top: 235px;
+				left: 7px;
+				border-radius: 100px 100px;
+				position:absolute;
+				}
+				
+			.base2 {
+				height: 70px;
+				width: 80px;
+				background-color: black;
+				top: 249px;
+				left: 18px;
+				border-radius: 50px 30px;
+				position:absolute;
+				-webkit-transform: rotate(40deg);
+				}
+				
+			.reflection {
+				background:white;
+				position: absolute;
+				border-radius:3px;
+				}
+		
+		#large {
+				height:180px;
+				width:50px;
+				background:white;
+				position: absolute;
+				top: 110px;
+				left: 57px;
+				border-radius:3px;
+				-webkit-transform: skew(-1.5deg);
+				}
+			
+			#medium {
+				height:65px;
+				width:15px;
+				top: 35px;
+				left: 92px;
+				-webkit-transform: skew(3deg);
+				}
+				
+			#small {
+				height:13px;
+				width:7px;
+				top: 12px;
+				left: 97px;
+				-webkit-transform: skew(8deg);
+				}
+				
+		.kneck {
+				width: 35px;
+				height: 130px;
+				background: black;
+				position: absolute;
+				top:-125px;
+				left: 42px;
+				}
+				
+			#kneck_left {
+				top: -32px;
+				left: -20px;
+				-webkit-transform: rotate(-65deg);
+				}
+				
+			#kneck_right {
+				top: -35px;
+				left: 31px;
+				-webkit-transform: rotate(65deg);
+				}
+			
+			.curve {
+				position: absolute;
+				width: 90px;
+				height: 7px;
+				border-radius: 180 100 100px 0px;
+				border: 8px solid black;
+				}
+			
+			.top {
+				width: 0;
+				height: 0;
+				border-left: 50px solid transparent;
+				border-right: 52px solid transparent;
+				border-bottom: 100px solid black;
+				top: -94px;
+				left: 9px;
+				position: absolute;
+				}
+			
+			.spout {
+				position: absolute;
+				width: 43px;
+				height: 20px;
+				top: -130px;
+				left: 38px;
+				background-color: black;
+				border-radius: 4px;
+				}
+				
+			.spout_top {
+				position: absolute;
+				width: 37.5px;
+				height: 10px;
+				top:-7px;
+				left: 2.5px;
+				background-color: black;
+				border-radius: 25px;
+			}
+			
+			.shape1 {
+				position: absolute;
+				line-height:3;
+				font-size: 24pt;
+				height: 12px;
+				top: 0px;
+				left: 100px;
+				}
+	
+	
+			.stereo {
+				background-color: black;
+				height: 200px;
+				width: 200px;
+				display:block;
+				position: relative;
+				}
+			
+			#half_circle1 {
+				-webkit-border-radius: 45px 0 0 45px ;
+				border-radius: 45px 0 0 45px ;
+				left: 375px;
+				}
+			
+			#half_circle2 {
+				-webkit-border-radius: 0px 45px 45px 0 ;
+				border-radius: 0px 45px 45px 0 ;
+				left: 575px;
+				top:-200px;
+				}
+				
+			#half_circle3 {
+				-webkit-border-radius: 0px 45px 45px 0 ;
+				border-radius: 0px 45px 45px 0 ;
+				left: 575px;
+				top:-370px;
+				}
+			
+			#half_circle4 {
+				-webkit-border-radius: 45px 0px 0px 45px ;
+				border-radius: 45px 0px 0px 45px ;
+				left: 375px;
+				top:-570px;
+				}
+			
+			.sqrframe {
+				background-color: grey;
+				position: absolute;
+				width: 170px;
+				height: 205px;
+				border-radius: 10px 10px;
+				border: 1px solid white;
+				top: -20px;
+				left: 113px;
+				}
+
+			.big_circlebtm {
+				width: 85px;
+				height: 85px;
+				background: grey;
+				border-radius: 50px;
+				border: 1px solid white;
+				-webkit-border-radius: 50px;
+				position: absolute;
+				top:80px;
+				}
+				
+			#left_bigbtm {
+				left: 14px;
+				}
+			
+			#right_bigbtm {
+				left: 299px;
+				}
+			
+			.small_circlebtm {
+				width: 45px;
+				height: 45px;
+				background: black;
+				border-radius: 50px;
+				border: 1px solid white;
+				-webkit-border-radius: 50px;
+				position: absolute;
+				top:99px;
+				}
+				
+			#left_smallbtm {
+			left: 34px;
+				}
+				
+			#right_smallbtm {
+			left: 319px;
+				}
+				
+			.circle_top {
+				width: 40px;
+				height: 40px;
+				background: white;
+				border-radius: 50px;
+				border: 2px solid grey;
+				-webkit-border-radius: 50px;
+				position: absolute;
+				top:0px;
+				}
+				
+			#left_top {
+				left: 35px;
+				}
+			
+			#right_top {
+				left: 320px;
+				}
+				
+			.menu_rectangle {
+				background: black;
+				position: absolute;
+				border: 1px solid white;
+				border-radius: 6px;
+				}
+			
+			#menu {
+				width: 150px;
+				height: 60px;
+				top: 5px;
+				left: 123px;
+				}
+			
+			.knob {
+				width: 20px;
+				height: 20px;
+				background: white;
+				border-radius: 50px;
+				border: 2px solid black;
+				-webkit-border-radius: 50px;
+				position: absolute;
+				top:85px;
+				}
+				
+			#knob1 {
+				left: 169px;
+				}
+				
+			#knob2 {
+				left: 201px;
+				}
+
+			#tapedeck {
+				width: 117px;
+				height: 47px;
+				top: 120px;
+				left: 138.5px;
+				}
+				
+			.divider {
+				height: 47px;
+				width: 1px;
+				top: 0px;
+				left: 59px;
+				position:absolute;
+				background: white;
+				}
+				
+			.handles {
+				width: 50px;
+				height: 6px;
+				background: white;
+				position: absolute;
+				border: 1px solid grey;
+				border-radius: 12px;
+				top: 10px;
+				}
+				
+			#handle1 {
+				left: 4px;
+				}
+				
+			#handle2 {
+				left: 63px;
+				}
+
+			.ant_body {
+				width: 0;
+				height: 0;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 280px solid black;
+				top: -230px;
+				left: 226px;
+				position: absolute;
+				-webkit-transform: rotate(-60deg);
+				}
+			
+			.ant_tip {
+				width: 20px;
+				height: 15px;
+				background: white;
+				-webkit-border-radius: 100px / 20px;
+				border-radius: 100px / 20px;
+				border: 2px solid grey;
+				position: absolute;
+				top: -165px;
+				left: 110px;
+				-webkit-transform: rotate(30deg);
+				}
+				
+			.shape2 {
+				position: absolute;
+				line-height:3;
+				font-size: 24pt;
+				height: 12px;
+				top: 0px;
+				left: 400px;
+				}
+				
+		</style>
+	</head>
+	
+	<body>
+		<div id="winebody" class="rectangle">
+			<div class="base"></div>
+			<div class="base2"></div>
+			<div id="large" class="reflection"></div>
+			<div id="medium" class="reflection"></div>
+			<div class="top"></div>
+			<div class="kneck"></div>
+			<div id="kneck_left" class="curve"></div>
+			<div id="kneck_right" class="curve"></div>
+			<div class="spout">
+				<div class="spout_top"></div>
+			</div>
+			<div id="small" class="reflection"></div>		
+		</div>
+		<p class="shape1">Wine Bottle</p>
+		
+			<div id="half_circle1" class="stereo"></div>
+			<div id="half_circle2" class="stereo"></div>
+			<div id="half_circle3" class="stereo"></div>
+			<div id="half_circle4" class="stereo">
+			<div class="sqrframe"></div>
+			<div id="left_bigbtm" class="big_circlebtm"></div>
+			<div id="right_bigbtm" class="big_circlebtm"></div>
+			<div id="left_smallbtm" class="small_circlebtm"></div>
+			<div id="right_smallbtm" class="small_circlebtm"></div>
+			<div id="left_top" class="circle_top"></div>
+			<div id="right_top" class="circle_top"></div>
+			<div id="menu" class="menu_rectangle"></div>
+			<div id="knob1" class="knob"></div>
+			<div id="knob2" class="knob"></div>
+			<div id="tapedeck" class="menu_rectangle">
+				<div id="tape_left" class="menu_rectangle"></div>
+				<div id="tape_right" class="menu_rectangle"></div>
+				<div class="divider"></div>
+				<div id="handle1" class="handles"></div>
+				<div id="handle2" class="handles"></div>
+			</div>
+			<div class="ant_body"></div>
+			<div class="ant_tip"></div>
+		</div>
+		<p class="shape2">Stereo</p>
+		
+	</body>
+	
+</html>
