@@ -1,0 +1,324 @@
+<html>
+	<head>
+		<title> tape dispenser </title>
+		<style type="text/css">
+		
+		#body {
+			border-bottom: 250px solid rgba(255, 150, 102, 0.93);
+			border-left: 35px solid transparent;
+			border-right: 35px solid transparent;
+			height: 0;
+			width: 100px;
+			position:relative;
+			-webkit-transform: rotate(180deg);
+			left:50px;
+			top:150px;
+			}
+			
+		#water {
+			border-bottom: 180px solid rgba(204, 220, 235, 0.57);
+			border-left: 25px solid transparent;
+			border-right: 25px solid transparent;
+			height: 0;
+			width: 90px;
+			left:-20px;
+			top:8px;
+			position: absolute;
+			-webkit-animation:drain 2s ease .5s 6 normal;
+			}
+		
+		@-webkit-keyframes drain {
+  			0% {opacity:100; }
+  			50% {opacity:50; }
+  			100% {opacity:0; }
+			}
+   			
+   		#rim {
+			border-bottom: 20px solid rgba(255, 182, 148, 0.78);
+			border-left: 4.5px solid transparent;
+			border-right: 4.5px solid transparent;
+			height: 0;
+			width: 164px;
+			left:-36px;
+			top:230px;
+			position: absolute;
+			}
+			
+		#top {
+			width: 194px;
+			height: 24px;
+			background: rgba(255, 150, 102, 0.93);
+			border-radius: 6px;
+			left:-47px;
+			top:250px;
+			position: absolute;
+			}
+			
+		.straw {
+			background: #FFCCB5;
+			position: absolute;
+   				}
+   				
+		#tube {
+			width: 15px;
+			height: 370px;
+			border-radius: 8px;
+			left:45px;
+			top:11px;
+			-webkit-transform: skew(3deg);
+			-webkit-animation:straw-move 2s ease-out .5s 6 normal;
+			}
+		
+		@-webkit-keyframes straw-move {
+  			0% { -webkit-transform: rotate(0deg); }
+ 		 	40% { -webkit-transform: rotate(10deg); } 
+ 		 	60% { -webkit-transform: rotate(-13deg); }
+ 		 	60% { -webkit-transform: rotate(0deg); }
+			}
+			
+			
+		
+		#oval_base {
+			width: 114px;
+			height: 60px;
+			background: black;
+			position: absolute;
+			left:-8px;
+			top:-280px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+		
+		#rectangle {
+			width: 114px;
+			height: 50px;
+			background: black;
+			position: absolute;
+			left:-8px;
+			top:-252px;
+			}
+			
+		#oval_base1 {
+			width: 108px;
+			height: 60px;
+			background: grey;
+			position: absolute;
+			left:-5px;
+			top:-234px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+			
+		#rectangle_base {
+			width: 108px;
+			height: 80px;
+			background: grey;
+			position: absolute;
+			left:-5px;
+			top:-208px;
+			}
+			
+		#oval_base2 {
+			width: 117px;
+			height: 70px;
+			background: black;
+			position: absolute;
+			left:-9px;
+			top:-214px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+			
+		#rectangle1 {
+			width: 117px;
+			height: 200px;
+			background: black;
+			position: absolute;
+			left:-9px;
+			top:-180px;
+			}
+			
+		#oval_rec {
+			width: 117px;
+			height: 70px;
+			background: grey;
+			position: absolute;
+			left:-9px;
+			top:-20px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+		
+		#trapezoid {
+			border-bottom: 125px solid grey;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			height: 0;
+			width: 100px;
+			position:relative;
+			-webkit-transform: rotate(180deg);
+			left:300px;
+			top:45px;
+			}
+		
+		#oval {
+			width: 140px;
+			height: 90px;
+			background: black;
+			position: absolute;
+			left:-20px;
+			top:90px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+		
+		#rectangle2 {
+			width: 140px;
+			height: 80px;
+			background: black;
+			position: absolute;
+			left:-20px;
+			top:130px;
+			}
+		
+		#oval8 {
+			width: 144px;
+			height: 125px;
+			background: grey;
+			position: absolute;
+			left:-22px;
+			top:110px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+			
+		#oval1 {
+			width: 140px;
+			height: 110px;
+			background: black;
+			position: absolute;
+			left:-20px;
+			top:140px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+		
+		#oval2 {
+			width: 140px;
+			height: 90px;
+			background: grey;
+			position: absolute;
+			left:-20px;
+			top:161px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+		
+		#oval3 {
+			width: 120px;
+			height: 75px;
+			background: black;
+			position: absolute;
+			left:-10px;
+			top:165px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+		
+		#oval4 {
+			width: 116px;
+			height: 65px;
+			background: white;
+			position: absolute;
+			left:-8px;
+			top:165px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			}
+		
+		#button1 {
+   			display:block;
+   			width: 56px;
+   			height: 65px;
+   			background-color: black;
+   			-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   			border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+   			position:absolute;
+   			left:20px;
+   			top:8px;
+			}
+		
+		#button2 {
+			width: 41px;
+			height: 25px;
+			background: grey;
+			position: absolute;
+			left:27px;
+			top:20px;
+			border-radius: 50%;
+			-webkit-transform: rotate(0deg);
+			-webkit-animation:button2 2.5s linear .5s 8 normal;
+			}
+		
+		@-webkit-keyframes button2 {
+  			0% { -webkit-transform: translate(0px,0px); }
+ 		 	50% { -webkit-transform: translate(0px,13px); }
+ 		 	100% { -webkit-transform: translate(0px,0px); }
+			}
+		
+		#light {
+			border-bottom: 230px solid rgba(255, 255, 0, 0.42);
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			height: 0;
+			width: 109px;
+			position:relative;
+			left:-20px;
+			top:185px;
+			-webkit-animation:light 2.5s linear .4s 8 normal;
+			}
+		
+		@-webkit-keyframes light {
+  			0% {opacity:0; }
+  			50% {opacity:100; }
+  			100% {opacity:0; }
+  			
+			}
+   			
+		
+		</style>
+	</head>
+	
+	<body>
+	
+		<div id="body" class="cup">
+			<div id="tube" class="straw"></div>
+			<div id="water" class="cup"></div>
+			<div id="rim" class="cup"></div>
+			<div id="top" class="cup"></div>	
+		</div>
+		
+		<div id="trapezoid" class="flashlight">
+			<div id="oval_base" class="flashlight"></div>
+			<div id="rectangle" class="flashlight"></div>
+			<div id="oval_base1" class="flashlight"></div>
+			<div id="rectangle_base" class="flashlight"></div>
+			<div id="oval_base2" class="flashlight"></div>
+			<div id="rectangle1" class="flashlight"></div>
+			<div id="oval_rec" class="flashlight"></div>
+			<div id="oval" class="flashlight"></div>
+			<div id="rectangle2" class="flashlight"></div>
+			<div id="oval8" class="flashlight"></div>
+			<div id="oval1" class="flashlight"></div>
+			<div id="oval2" class="flashlight"></div>
+			<div id="oval3" class="flashlight"></div>
+			<div id="oval4" class="flashlight"></div>
+			<div id="button1" class="flashlight"></div>
+			<div id="button2" class="flashlight"></div>
+			<div id="light" class="flashlight"></div>
+		</div>
+	
+	
+	</body>
+	
+</html>
