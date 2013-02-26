@@ -45,7 +45,7 @@ nav.imagenav ul{display:table;margin:0 auto;text-align:center;}
 nav.imagenav ul li{float:left;}
 nav.imagenav ul li a{float:left;width:18px;height:36px;text-indent:-5000px;background:url('http://c806206.r6.cf2.rackcdn.com/gnav.png') 1px -63px no-repeat;}
 nav.imagenav ul li a.current{color:#00c400;background:url('http://c806206.r6.cf2.rackcdn.com/gnav.png') -35px -63px no-repeat;}
-#showcase,#portfolio{padding:18px 0 0 0;}#showcase li,#portfolio li{float:left;overflow:hidden;height:80px;width:164px;margin-bottom:18px;background:url('http://c806206.r6.cf2.rackcdn.com/placeholder.png') -3px -3px no-repeat;}
+#showcase,#portfolio{padding:18px 0 0 0;}#showcase li,#portfolio li{float:left;overflow:hidden;height:100px;width:164px;margin-bottom:18px;background:url('http://c806206.r6.cf2.rackcdn.com/placeholder.png') -3px -3px no-repeat;}
 #showcase li a.thumb,#portfolio li a.thumb{width:164px;height:126px;border:none;float:left;display:block;}#showcase li a.thumb img,#portfolio li a.thumb img{vertical-align:bottom;}
 #showcase li a.legend,#portfolio li a.legend{display:block;float:left;position:relative;background:#CDEBF7;width:158px;padding:0 3px;height:126px;color:#67B6B8;font-size:16px;line-height:27px;opacity:1;margin-top:-126px;}
 #showcase li a.legend span,#portfolio li a.legend span{font-size:12px;line-height:18px;width:142px;float:left;color:#444;display:block;}
