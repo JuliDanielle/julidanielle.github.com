@@ -55,7 +55,7 @@ table {
 
 .centered { 
   margin:0 auto;
-  width:960px;
+  width:1024px;
 }
 
 
@@ -75,6 +75,22 @@ html[xmlns] .clearfix { display: block; }
 
 
 @font-face{ 
+	font-family: 'prelo_hairline';
+	src: url('preloslab-hairline-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-hairline-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-hairline-webfont.ttf') format('truetype'),
+	     url('preloslab-book-webfont.svg#prelo_hairline') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_light';
+	src: url('preloslab-light-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-light-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-light-webfont.ttf') format('truetype'),
+	     url('preloslab-book-webfont.svg#prelo_light') format('svg');
+}
+@font-face{ 
 	font-family: 'prelo_book';
 	src: url('preloslab-book-webfont.eot');
 	src: url('fonts/webfontkit-prelo/preloslab-book-webfont.eot?#iefix') format('embedded-opentype'),
@@ -82,32 +98,89 @@ html[xmlns] .clearfix { display: block; }
 	     url('fonts/webfontkit-prelo/preloslab-book-webfont.ttf') format('truetype'),
 	     url('preloslab-book-webfont.svg#prelo_book') format('svg');
 }
+@font-face{ 
+	font-family: 'prelo_medium';
+	src: url('preloslab-medium-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-medium-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-medium-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_medium') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_bold';
+	src: url('preloslab-bold-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-bold-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-bold-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_bold') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_black';
+	src: url('preloslab-black-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-black-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-black-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-black-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_black') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_light_sans';
+	src: url('prelo-light-webfont.eot');
+	src: url('fonts/webfontkit-prelo/prelo-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/prelo-light-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/prelo-light-webfont.ttf') format('truetype'),
+	     url('prelo-light-webfont.svg#prelo_black') format('svg');
+}
+
 
 body { 
 		margin-right:auto;
 		margin-left:auto; 
 		width: 100% 
 		text-align:center;
-		max-width:1024px;
+		max-width:2000px;
 		min-width:600px;
 		height:3000px;
+		background-color:rgb(240, 240, 240);
 		}
 #background_1 {
 		background-image: url(img/book-wireframes/title-background.jpg);
 		height:568px;
+		width:1024px;
+		background-repeat:no;
+		position:relative;
+		margin:0 auto;
 }
 #background_2 {
-		background-image: url(img/book-wireframes/story-background.jpg);
-		height:568px;
-		margin-top:30px;
+		background-image: url(img/book-wireframes/story-background2.jpg);
+		height:1136px;
+		width:1024px;
+		margin-top:-64px;
+		background-repeat:no;
+		position:relative;
+		margin:0 auto;
+		top:0px;
 }
 #background_3 {
 		background-image: url(img/book-wireframes/challenges-background.jpg);
 		height:568px;
-		margin-top:30px;
+		width:1024px;
+		margin-top:0px;
+		background-repeat:no;
+		position:relative;
+		margin:0 auto;
+}
+#background_4 {
+		background-image: url(img/book-wireframes/who-background.jpg);
+		height:568px;
+		width:1024px;
+		margin-top:0px;
+		background-repeat:no;
+		position:relative;
+		margin:0 auto;
 }
 #site-wrapper {
 		height:568px;
+		width:100%;
 }
 #site-title {
 		height:200px;
@@ -115,7 +188,7 @@ body {
 }
 
 h1 {
-	font-family: 'prelo_book';
+	font-family: 'prelo_medium';
 	font-size:6em;
 	text-align:center;
 	text-transform: uppercase;
@@ -140,28 +213,40 @@ h4 {
 	letter-spacing: 6px;
 	color:rgb(215, 217, 219);
 }
+h3 {
+	font-family: 'prelo_light';
+	font-size:1.8em;
+	text-align:center;
+	letter-spacing: 2px;
+	margin-top:7px;
+	color:rgb(215, 217, 219);
+	line-height:1.2em;
+}
 h5 {
-	font-family: 'prelo_book';
+	font-family: 'prelo_light';
+	font-size:1.3em;
+	text-align:center;
+	margin-top:7px;
+	color:rgb(215, 217, 219);
+}
+h6 {
+	font-family: 'prelo_light_sans';
 	font-size:.5em;
 	text-align:center;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 	color:rgb(215, 217, 219);
 }
-p {
-	font-family: 'prelo_book';
-	font-size:1em;
-	width:430px;
-	margin-left:90px;
-}
+
 #main-nav {
 	margin: 0 auto;
 	height: 70px;
 	background: rgba(255, 255, 255, 0);
-	top: 215px;
+	ackground: yellow;
+	top: 207px;
 	left: 0;
 	width: 100%;
-	z-index: 2;
+	position:relative;
 	}
 #main-nav ul {
 	margin: 0 auto;
@@ -192,37 +277,25 @@ p {
 	padding-top:90px;
 	width:100%;
 }
-#about-story_1 {
-	font-family: 'prelo_book';
-	font-size:1em;
-	width:430px;
+#about-section p {
+	font-family: 'prelo_light';
+	font-size:2.3em;
+	color: rgb(116, 80, 67);
+	width:730px;
 	margin-left:90px;
-	color: rgb(85, 61, 52);
-	margin-bottom: 10px;
+	line-height:30pt;
+}
+#about-story_1 {
+	margin-bottom: 150px;
 }
 #about-story_2 {
-	font-family: 'prelo_book';
-	font-size:1em;
-	width:430px;
-	margin-left:90px;
-	color: rgb(85, 61, 52);
-	margin-bottom: 10px;
+	margin-bottom: 150px;
 }
 #about-story_3 {
-	font-family: 'prelo_book';
-	font-size:1em;
-	width:430px;
-	margin-left:90px;
-	color: rgb(85, 61, 52);
-	margin-bottom: 10px;
+	margin-bottom: 150px;
 }
 #about-story_4 {
-	font-family: 'prelo_book';
-	font-size:1em;
-	width:430px;
-	margin-left:90px;
-	color: rgb(85, 61, 52);
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 #challenges-section{
 	font-family: 'prelo_book';
@@ -280,4 +353,47 @@ p {
 	font-size:1em;
 	width:55px;
 	margin:0 auto;
+}
+#content-box {
+	width:309px;
+	position: relative;
+	margin-left:190px;
+	margin-top:-440px;
+}
+.big-book {
+	width:280px;
+	height:350px;
+	position: relative;
+	left:193px;
+	top:15px;
+}
+.right-side{
+	width:380px;
+	ackground-color:green;
+	padding:10px;
+	position: relative;
+	left:575px;
+	top:-340px;
+}
+.right-side p{
+	font-family: 'prelo_light';
+	font-size:1.4em;
+	color: rgb(116, 80, 67);
+	line-height:20pt;
+}
+#who-section {
+}
+#who-description {
+	height:200px;
+	width:585px;
+	left:215px;
+	top:352.3px;
+	position:relative;
+}
+#who-section p {
+	font-family: 'prelo_light';
+	font-size:1.3em;
+	color: rgb(116, 80, 67);
+	line-height:18pt;
+	text-align:center;
 }

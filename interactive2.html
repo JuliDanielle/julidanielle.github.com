@@ -7,6 +7,19 @@
 	<meta name="keywords" content="Books, Censorship, Book Challenge, Book Ban, American Library Association, youth fiction">
 	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" charset="utf-8">
 	<style type="text/css"></style>
+	<title>Sticky Plugin</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.sticky.js"></script>
+  <script>
+    $(window).load(function(){
+      $("#main-nav").sticky({ topSpacing: 0 });
+    });
+  </script>
+  <script>
+    $(window).load(function(){
+      $("#part-one").sticky({ topSpacing: 0 });
+    });
+  </script>
 	<!-- favicon and font kits here -->
 </head>
 
@@ -19,19 +32,19 @@
 				<h1>Challenges</h1>
 				<h2>An Interactive Infographic</h2>
 			</div>
-			<div id="main-nav" style="position: relative;">
+			<div id="main-nav">
 				<ul>
 					<li>
-						<a class="scroll_1" href>About</a>
+						<a href="#scroll_1">About</a>
 					</li>
-					<li><a class="scroll_2" href>Challenges</a>
+					<li><a href="#scroll_2">Challenges</a>
 					</li>
-					<li><a class="scroll_3" href>Who's Involved</a></li>
+					<li><a href="#scroll_3">Who's Involved</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="background_2">
-			<div id="about-section">
+			<a id="scroll_1"><div id="about-section"></a>
 				<p class="about-story">
 					<p id="about-story_1">A challenge is an attempt to remove or restrict materials, based upon the objections of a person or group.</p>
 					<p id="about-story_2">More than 11,000 books have been challenged since 1982.</p>
@@ -41,7 +54,7 @@
 			</div>
 		</div>
 		<div id="background_3">
-			<div id="challenges-section">
+			<a id="scroll_2"><div id="challenges-section"></a>
 				<div class="inner-block">
 					<div id="year-nav"><!-- not sure what position I should put here, since it's a side nav bar -->
 						<!-- should I put a div here for the year up arrow? -->
@@ -64,28 +77,26 @@
 							</li>
 						</ul>
 					</div>
-					<div id=""content-box"">
+					<div id="content-box">
 						<ul class="small-books">
 							<li>
-								<a class="small-book_1" href><img src="#" /><!--img src here for small-book_1 --></a>
+								<a class="small-book_1" href><img src="img/book-wireframes/small-books.png" /><!--img src here for small-book_1 --></a>
 							</li> <!-- add eleven more img src links -->
 						</ul>
 					</div>
-						<div class="big-book">
-								<img src="#" /><!-- either insert png link or draw with css shapes -->
-								<h3>1984 by George Orwell</h3>
-							</div>
-						</div>
-						<div class="right-side">
-							<div class="book-description">
-								<p>Orwell's 1984 is a heavily challenged book. The ALA routinely lists it as one of the most challenged books and it's in the top 10 list of challenged classics. The book warns of totalitarian censorship and chronicles the grim future of a society robbed of free will, privacy and truth.</p>
-							</div>
+					<div class="big-book">
+							<a href="x"><img src="img/book-wireframes/big-book1.png" /></a><!-- either insert png link or draw with css shapes -->
+					</div>
+					<div class="right-side">
+						<div class="book-description">
+							<p>Orwell's 1984 is a heavily challenged book. The ALA routinely lists it as one of the most challenged books and it's in the top 10 list of challenged classics. The book warns of totalitarian censorship and chronicles the grim future of a society robbed of free will, privacy and truth.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-			<div id="who-section">
+		<div id="background_4">
+			<a id="scroll_3"><div id="who-section"></a>
 				<div class="who-people">
 					<ul> 
 						<li>
@@ -93,19 +104,16 @@
 						</li> <!-- add 6 more ppl here -->
 					</ul>
 				</div>
-				<div id="table">
+				<div id="people">
 					<img src="#" /><!-- table png here -->
 				</div>
 				<div id="who-description">
 					<p>There are many groups and organizations about today offering plenty of educational resources and fun tools in regards to book bans, media censorship, and human rights.</p>
 				</div>
 			</div>
-			<div id="bibliography">
-				<p>This is my bibliography, where I got all my data, etc.</p>
-			</div>
-			<div id="footer">
-				<h5>This site made by Julianne Jensen 2013</h5>
-			</div>
+		</div>
+		<div id="footer">
+				<h6>This site made by Julianne Jensen 2013</h6>
 		</div>
 	</div>
 </body>
