@@ -7,6 +7,8 @@
 	<meta name="keywords" content="Books, Censorship, Book Challenge, Book Ban, American Library Association, youth fiction">
 	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" charset="utf-8">
 	<style type="text/css"></style>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
 	<title>Sticky Plugin</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.sticky.js"></script>
@@ -77,20 +79,35 @@
 							</li>
 						</ul>
 					</div>
-					<div id="content-box">
-						<ul class="small-books">
-							<li>
-								<a class="small-book_1" href><img src="img/book-wireframes/small-books.png" /><!--img src here for small-book_1 --></a>
-							</li> <!-- add eleven more img src links -->
+					<div id="small-books">
+						<ul>
+							<li id="small-book_1"><img src="img/book-wireframes/small-books_1.png" /></li>
+							<li id="small-book_2"><img src="img/book-wireframes/small-books_2.png" /></li>
+							<li id="small-book_3"><img src="img/book-wireframes/small-books_3.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_4.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_5.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_6.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_7.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_8.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_9.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_10.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_11.png" /></li>
+							<li id="small-book_4"><img src="img/book-wireframes/small-books_12.png" /></li>
 						</ul>
 					</div>
-					<div class="big-book">
-							<a href="x"><img src="img/book-wireframes/big-book1.png" /></a><!-- either insert png link or draw with css shapes -->
+					<div id="big-books" style="display: block;">
+						<article class="title"> 
+							<div id="big-book_1" style="display: block;">
+								<img src="img/book-wireframes/big-book.png" alt="big1" /> 
+							</div>
+						<article class="title"> 
+							<div id="big-book_2" style="display: none;"> 
+								<img src="img/book-wireframes/big-book1.png" alt="big2" /> 
+							</div>
+						</article>
 					</div>
-					<div class="right-side">
-						<div class="book-description">
-							<p>Orwell's 1984 is a heavily challenged book. The ALA routinely lists it as one of the most challenged books and it's in the top 10 list of challenged classics. The book warns of totalitarian censorship and chronicles the grim future of a society robbed of free will, privacy and truth.</p>
-						</div>
+					<div id="book-description">
+						<p>Orwell's 1984 is a heavily challenged book. The ALA routinely lists it as one of the most challenged books and it's in the top 10 list of challenged classics. The book warns of totalitarian censorship and chronicles the grim future of a society robbed of free will, privacy and truth.</p>					
 					</div>
 				</div>
 			</div>

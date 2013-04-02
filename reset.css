@@ -247,6 +247,7 @@ h6 {
 	left: 0;
 	width: 100%;
 	position:relative;
+	z-index:10;
 	}
 #main-nav ul {
 	margin: 0 auto;
@@ -354,34 +355,62 @@ h6 {
 	width:55px;
 	margin:0 auto;
 }
-#content-box {
-	width:309px;
+#small-books {
+	width:316px;
+	height:118px;
 	position: relative;
-	margin-left:190px;
-	margin-top:-440px;
+	margin-left:180px;
+	margin-top:-450px;
 }
-.big-book {
-	width:280px;
+#small-books ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
+.small:hover {
+	opacity: 0.7;
+}
+#big-books {
+	display:block;
+}
+#big-book_1 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book_2 {
+	left:194px;
+	top:20px;
+	float:left;
+	position: relative;
+}
+#book-description {
 	height:350px;
-	position: relative;
-	left:193px;
-	top:15px;
-}
-.right-side{
 	width:380px;
-	ackground-color:green;
 	padding:10px;
-	position: relative;
+	position:relative;
 	left:575px;
-	top:-340px;
+	top:40px;
 }
-.right-side p{
+#book-description p{
 	font-family: 'prelo_light';
 	font-size:1.4em;
 	color: rgb(116, 80, 67);
 	line-height:20pt;
+	height:360px;
+	width:610px;
+	margin-left:50px;
+	position:relative;
+	left:-285px;
 }
 #who-section {
+	
 }
 #who-description {
 	height:200px;
