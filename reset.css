@@ -390,6 +390,12 @@ h6 {
 	float:left;
 	position: relative;
 }
+#big-book_3 {
+	left:193px;
+	top:20px;
+	float:left;
+	position: relative;
+}
 #book-descriptions {
 	display:block;
 	height:350px;
