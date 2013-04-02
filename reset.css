@@ -390,24 +390,28 @@ h6 {
 	float:left;
 	position: relative;
 }
-#book-description {
+#book-descriptions {
+	display:block;
 	height:350px;
-	width:380px;
+	width:430px;
 	padding:10px;
-	position:relative;
-	left:575px;
-	top:40px;
+	position:absolute;
+	left:548px;
+	top:120px;
 }
-#book-description p{
+.description p{
 	font-family: 'prelo_light';
 	font-size:1.4em;
 	color: rgb(116, 80, 67);
 	line-height:20pt;
-	height:360px;
-	width:610px;
-	margin-left:50px;
-	position:relative;
-	left:-285px;
+}
+#description_1 {
+	float:left;
+	background-color: green;
+}
+#description_2 {
+	float:left;
+	background-color: green;
 }
 #who-section {
 	
