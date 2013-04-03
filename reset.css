@@ -337,12 +337,12 @@ h6 {
 	font-size: 20px;
 	line-height:2em;
 }
-#year-nav li a {
+#year-nav li {
 	color:rgb(215, 217, 219);
 	text-decoration: none;
 	outline-style: none;
 	}
-#year-nav li a:hover {
+#year-nav li:hover {
 	opacity: 0.6;
 	text-decoration: none;
 	outline-style: none;
@@ -371,6 +371,7 @@ h6 {
 .arrow:hover {
 	opacity: 0.7;
 }
+		/* SMALL BOOKS 1 */
 #small-books {
 	width:316px;
 	height:118px;
@@ -391,6 +392,25 @@ h6 {
 .small:hover {
 	opacity: 0.7;
 }
+		/* SMALL BOOKS 2 */
+#small-books2 {
+	width:316px;
+	height:118px;
+	position: relative;
+	margin-left:180px;
+	margin-top:-450px;
+}
+#small-books2 ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books2 li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
+		/* BIG BOOKS 1 */
 #big-books {
 	display:block;
 }
@@ -418,6 +438,59 @@ h6 {
 	float:left;
 	position: relative;
 }
+#big-book_5 {
+	left:193px;
+	top:20px;
+	float:left;
+	position: relative;
+}
+#big-book_6 {
+	left:193px;
+	top:20px;
+	float:left;
+	position: relative;
+}
+		/* BIG BOOKS 2 */
+#big-books2 {
+	display:block;
+}
+#big-book2_1 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_2 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_3 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_4 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_5 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_6 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+		/* DESCRIPTION 1 */
 #book-descriptions {
 	display:block;
 	height:350px;
@@ -435,11 +508,15 @@ h6 {
 }
 #description_1 {
 	float:left;
-	background-color: green;
 }
 #description_2 {
 	float:left;
-	background-color: green;
+}
+#description_3 {
+	float:left;
+}
+#description_4 {
+	float:left;
 }
 #who-section {
 	
