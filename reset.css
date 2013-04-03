@@ -366,7 +366,7 @@ h6 {
 #arrow-down {
 	position:relative;
 	left:22px;
-	top:-6px;
+	top:-5px;
 }
 .arrow:hover {
 	opacity: 0.7;
@@ -376,7 +376,7 @@ h6 {
 	width:316px;
 	height:118px;
 	position: relative;
-	margin-left:180px;
+	margin-left:265px;
 	margin-top:-450px;
 }
 #small-books ul {
@@ -397,7 +397,7 @@ h6 {
 	width:316px;
 	height:118px;
 	position: relative;
-	margin-left:180px;
+	margin-left:265px;
 	margin-top:-450px;
 }
 #small-books2 ul {
@@ -415,7 +415,7 @@ h6 {
 	width:316px;
 	height:118px;
 	position: absolute;
-	margin-left:180px;
+	margin-left:265px;
 	margin-top:-450px;
 }
 #small-books3 ul {
@@ -520,10 +520,37 @@ h6 {
 }
 #big-book3_2 {
 	left:194px;
-	top:19px;
+	top:-310px;
 	float:left;
 	position: relative;
 }
+#big-book3_3 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+#big-book3_4 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+
+#big-book3_5 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+
+#big-book3_6 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+
 		/* DESCRIPTION 1 */
 #book-descriptions {
 	display:block;

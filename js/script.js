@@ -178,15 +178,43 @@ $(document).ready(function() {
   $("#small-book3_1 > img").on("click",function(){
     $("#big-books3").show();
     $("#book-descriptions").hide();
-    $(".title2 > div").hide()
+    $(".title3 > div").hide()
     $("#big-book3_1").show();
    });
    
    $("#small-book3_2 > img").on("click",function(){
     $("#big-books3").show();
     $("#book-descriptions").hide();
-    $(".title2 > div").hide()
+    $(".title3 > div").hide()
     $("#big-book3_2").show();
+   });
+   
+   $("#small-book3_3 > img").on("click",function(){
+    $("#big-books3").show();
+    $("#book-descriptions").hide();
+    $(".title3 > div").hide()
+    $("#big-book3_3").show();
+   });
+   
+   $("#small-book3_4 > img").on("click",function(){
+    $("#big-books3").show();
+    $("#book-descriptions").hide();
+    $(".title3 > div").hide()
+    $("#big-book3_4").show();
+   });
+   
+   $("#small-book3_5 > img").on("click",function(){
+    $("#big-books3").show();
+    $("#book-descriptions").hide();
+    $(".title3 > div").hide()
+    $("#big-book3_5").show();
+   });
+   
+   $("#small-book3_6 > img").on("click",function(){
+    $("#big-books3").show();
+    $("#book-descriptions").hide();
+    $(".title3 > div").hide()
+    $("#big-book3_6").show();
    });
   
  });
