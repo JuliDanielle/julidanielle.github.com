@@ -9,6 +9,8 @@ $(document).ready(function() {
 	$("#big-books2").hide();
 	$("#big-books3").hide();
 	$("#book-descriptions").hide();
+	$("#book-descriptions2").hide();
+	$("#book-descriptions3").hide();
 
 /* Year_1 calls small books */
 	
@@ -70,19 +72,243 @@ $(document).ready(function() {
    
   $("#big-book_1 > img").on("click",function(){
    $("#book-descriptions").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions3").hide();
    $(".description > div").show()
    $("#description_1").show();
    $("#description_2").hide();
+   $("#description_3").hide();
+   $("#description_4").hide();
+   $("#description_5").hide();
+   $("#description_6").hide();
    });
    
    $("#big-book_2 > img").on("click",function(){
    $("#book-descriptions").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions3").hide();
    $(".description > div").show()
    $("#description_1").hide();
    $("#description_2").show();
+   $("#description_3").hide();
+   $("#description_4").hide();
+   $("#description_5").hide();
+   $("#description_6").hide();
    }); 
    
-   $(".show_it1").click(function () { 
+   $("#big-book_3 > img").on("click",function(){
+   $("#book-descriptions").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions3").hide();
+   $(".description > div").show()
+   $("#description_1").hide();
+   $("#description_2").hide();
+   $("#description_3").show();
+   $("#description_4").hide();
+   $("#description_5").hide();
+   $("#description_6").hide();
+   }); 
+   
+  $("#big-book_4 > img").on("click",function(){
+   $("#book-descriptions").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions3").hide();
+   $(".description > div").show()
+   $("#description_1").hide();
+   $("#description_2").hide();
+   $("#description_3").hide();
+   $("#description_4").show();
+   $("#description_5").hide();
+   $("#description_6").hide();
+   }); 
+   
+  $("#big-book_5 > img").on("click",function(){
+   $("#book-descriptions").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions3").hide();
+   $(".description > div").show()
+   $("#description_1").hide();
+   $("#description_2").hide();
+   $("#description_3").hide();
+   $("#description_4").hide();
+   $("#description_5").show();
+   $("#description_6").hide();
+   }); 
+   
+  $("#big-book_6 > img").on("click",function(){
+   $("#book-descriptions").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions3").hide();
+   $(".description > div").show()
+   $("#description_1").hide();
+   $("#description_2").hide();
+   $("#description_3").hide();
+   $("#description_4").hide();
+   $("#description_6").show();
+   $("#description_5").hide();
+   });
+
+/* Big book2_1,2,3... calls description2_1,2,3 */
+   
+  $("#big-book2_1 > img").on("click",function(){
+   $("#book-descriptions").hide();
+   $("#book-descriptions3").hide();
+   $("#book-descriptions2").show();
+   $(".description > div").show()
+   $("#description2_1").show();
+   $("#description2_2").hide();
+   $("#description2_3").hide();
+   $("#description2_4").hide();
+   $("#description2_5").hide();
+   $("#description2_6").hide();
+   });
+   
+  $("#big-book2_2 > img").on("click",function(){
+   $("#book-descriptions").hide();
+   $("#book-descriptions3").hide();
+   $("#book-descriptions2").show();
+   $(".description > div").show()
+   $("#description2_2").show();
+   $("#description2_1").hide();
+   $("#description2_3").hide();
+   $("#description2_4").hide();
+   $("#description2_5").hide();
+   $("#description2_6").hide();
+   });
+   
+  $("#big-book2_3 > img").on("click",function(){
+   $("#book-descriptions2").show();
+   $("#book-descriptions").hide();
+   $("#book-descriptions3").hide();
+   $(".description > div").show()
+   $("#description2_3").show();
+   $("#description2_1").hide();
+   $("#description2_2").hide();
+   $("#description2_4").hide();
+   $("#description2_5").hide();
+   $("#description2_6").hide();
+   });
+
+  $("#big-book2_4 > img").on("click",function(){
+   $("#book-descriptions2").show();
+   $("#book-descriptions").hide();
+   $("#book-descriptions3").hide();
+   $(".description > div").show()
+   $("#description2_4").show();
+   $("#description2_1").hide();
+   $("#description2_3").hide();
+   $("#description2_2").hide();
+   $("#description2_5").hide();
+   $("#description2_6").hide();
+   });
+
+  $("#big-book2_5 > img").on("click",function(){
+   $("#book-descriptions2").show();
+   $("#book-descriptions").hide();
+   $("#book-descriptions3").hide();
+   $(".description > div").show()
+   $("#description2_5").show();
+   $("#description2_1").hide();
+   $("#description2_3").hide();
+   $("#description2_4").hide();
+   $("#description2_2").hide();
+   $("#description2_6").hide();
+   });
+   
+  $("#big-book2_6 > img").on("click",function(){
+   $("#book-descriptions2").show();
+   $("#book-descriptions").hide();
+   $("#book-descriptions3").hide();
+   $(".description > div").show()
+   $("#description2_6").show();
+   $("#description2_1").hide();
+   $("#description2_3").hide();
+   $("#description2_4").hide();
+   $("#description2_5").hide();
+   $("#description2_2").hide();
+   });
+
+/* Big book3_1,2,3... calls description3_1,2,3 */
+
+  $("#big-book3_1 > img").on("click",function(){
+   $("#book-descriptions3").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions").hide();
+   $(".description > div").show()
+   $("#description3_1").show();
+   $("#description3_2").hide();
+   $("#description3_3").hide();
+   $("#description3_4").hide();
+   $("#description3_5").hide();
+   $("#description3_6").hide();
+   });
+
+  $("#big-book3_2 > img").on("click",function(){
+   $("#book-descriptions3").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions").hide();
+   $(".description > div").show()
+   $("#description3_2").show();
+   $("#description3_1").hide();
+   $("#description3_3").hide();
+   $("#description3_4").hide();
+   $("#description3_5").hide();
+   $("#description3_6").hide();
+   });
+
+  $("#big-book3_3 > img").on("click",function(){
+   $("#book-descriptions3").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions").hide();
+   $(".description > div").show()
+   $("#description3_3").show();
+   $("#description3_2").hide();
+   $("#description3_1").hide();
+   $("#description3_4").hide();
+   $("#description3_5").hide();
+   $("#description3_6").hide();
+   });
+   
+  $("#big-book3_4 > img").on("click",function(){
+   $("#book-descriptions3").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions").hide();
+   $(".description > div").show()
+   $("#description3_4").show();
+   $("#description3_2").hide();
+   $("#description3_3").hide();
+   $("#description3_1").hide();
+   $("#description3_5").hide();
+   $("#description3_6").hide();
+   });
+
+  $("#big-book3_5 > img").on("click",function(){
+   $("#book-descriptions3").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions").hide();
+   $(".description > div").show()
+   $("#description3_5").show();
+   $("#description3_2").hide();
+   $("#description3_3").hide();
+   $("#description3_4").hide();
+   $("#description3_1").hide();
+   $("#description3_6").hide();
+   });
+
+  $("#big-book3_6 > img").on("click",function(){
+   $("#book-descriptions3").show();
+   $("#book-descriptions2").hide();
+   $("#book-descriptions").hide();
+   $(".description > div").show()
+   $("#description3_6").show();
+   $("#description3_2").hide();
+   $("#description3_3").hide();
+   $("#description3_4").hide();
+   $("#description3_5").hide();
+   $("#description3_1").hide();
+   });
+   
+   /*$(".show_it1").click(function () { 
    	$("#description_1").show("slow"); 
    	$("#description_2").hide();
    	$("#description_3").hide();
@@ -101,7 +327,7 @@ $(document).ready(function() {
     $("#description_2").hide();
     $("#description_4").hide();
     $("#description_1").hide();
-    });
+    });*/
     
 /* Year_2 calls small books_2 */
   

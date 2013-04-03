@@ -341,6 +341,7 @@ h6 {
 	color:rgb(215, 217, 219);
 	text-decoration: none;
 	outline-style: none;
+	cursor:pointer;
 	}
 #year-nav li:hover {
 	opacity: 0.6;
@@ -356,6 +357,7 @@ h6 {
 	width:55px;
 	margin:0 auto;
 	margin-bottom: 10px;
+	margin-top:-15px;
 	color: rgb(61, 41, 34);
 }
 #arrow-up {
@@ -378,6 +380,7 @@ h6 {
 	position: relative;
 	margin-left:265px;
 	margin-top:-450px;
+	cursor:pointer;
 }
 #small-books ul {
 	margin: 0 auto;
@@ -399,6 +402,7 @@ h6 {
 	position: relative;
 	margin-left:265px;
 	margin-top:-450px;
+	cursor:pointer;
 }
 #small-books2 ul {
 	margin: 0 auto;
@@ -417,6 +421,7 @@ h6 {
 	position: absolute;
 	margin-left:265px;
 	margin-top:-450px;
+	cursor:pointer;
 }
 #small-books3 ul {
 	margin: 0 auto;
@@ -431,6 +436,7 @@ h6 {
 		/* BIG BOOKS 1 */
 #big-books {
 	display:block;
+	cursor:pointer;
 }
 #big-book_1 {
 	left:194px;
@@ -471,6 +477,7 @@ h6 {
 		/* BIG BOOKS 2 */
 #big-books2 {
 	display:block;
+	cursor:pointer;
 }
 #big-book2_1 {
 	left:194px;
@@ -511,6 +518,7 @@ h6 {
 		/* BIG BOOKS 3 */
 #big-books3 {
 	display:block;
+	cursor:pointer;
 }
 #big-book3_1 {
 	left:194px;
@@ -578,6 +586,68 @@ h6 {
 #description_4 {
 	float:left;
 }
+#description_5 {
+	float:left;
+}
+#description_6 {
+	float:left;
+}
+		/* DESCRIPTION 2 */
+#book-descriptions2 {
+	display:block;
+	height:350px;
+	width:430px;
+	padding:10px;
+	position:absolute;
+	left:548px;
+	top:120px;
+}
+#description2_1 {
+	float:left;
+}
+#description2_2 {
+	float:left;
+}
+#description2_3 {
+	float:left;
+}
+#description2_4 {
+	float:left;
+}
+#description2_5 {
+	float:left;
+}
+#description2_6 {
+	float:left;
+}
+		/* DESCRIPTION 3 */
+#book-descriptions3 {
+	display:block;
+	height:350px;
+	width:430px;
+	padding:10px;
+	position:absolute;
+	left:548px;
+	top:120px;
+}
+#description3_1 {
+	float:left;
+}
+#description3_2 {
+	float:left;
+}
+#description3_3 {
+	float:left;
+}
+#description3_4 {
+	float:left;
+}
+#description3_5 {
+	float:left;
+}
+#description3_6 {
+	float:left;
+}
 		/* Statistics */
 #stat-section {
 	height:568px;
@@ -599,6 +669,7 @@ h6 {
 	width:150px;
 	margin:20px 0px 0px 20px;
 	opacity:.75;
+	cursor:pointer;
 }
 #initiator_img1:hover {
 	-webkit-animation: grow1 .6s ease-in-out 1;}	
@@ -642,6 +713,7 @@ h6 {
 	width:150px;
 	margin:20px 0px 0px 20px;
 	opacity:.65;
+	cursor:pointer;
 }
 #initiator_img2:hover {
 	-webkit-animation: grow2 .6s ease-in-out 1;}	
@@ -685,6 +757,7 @@ h6 {
 	width:150px;
 	margin:20px 0px 0px 20px;
 	opacity:.75;
+	cursor:pointer;
 }
 #initiator_img3:hover {
 	-webkit-animation: grow3 .6s ease-in-out 1;}	
