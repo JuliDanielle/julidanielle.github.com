@@ -550,7 +550,6 @@ h6 {
 	float:left;
 	position: relative;
 }
-
 		/* DESCRIPTION 1 */
 #book-descriptions {
 	display:block;
@@ -579,6 +578,7 @@ h6 {
 #description_4 {
 	float:left;
 }
+		/* Statistics */
 #stat-section {
 	height:568px;
 	width:100%;
