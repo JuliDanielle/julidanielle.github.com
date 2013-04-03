@@ -596,10 +596,9 @@ h6 {
 	position:absolute;
 	left:180px;
 	top:100px;
-	border-radius:10px;
 	width:150px;
 	margin:20px 0px 0px 20px;
-	border:4px solid #9c948c;
+	opacity:.75;
 }
 #initiator_img1:hover {
 	-webkit-animation: grow1 .6s ease-in-out 1;}	
@@ -640,10 +639,9 @@ h6 {
 	position:absolute;
 	left:410px;
 	top:100px;
-	border-radius:10px;
 	width:150px;
 	margin:20px 0px 0px 20px;
-	border:4px solid #9c948c;
+	opacity:.65;
 }
 #initiator_img2:hover {
 	-webkit-animation: grow2 .6s ease-in-out 1;}	
@@ -684,10 +682,9 @@ h6 {
 	position:absolute;
 	left:640px;
 	top:100px;
-	border-radius:10px;
 	width:150px;
 	margin:20px 0px 0px 20px;
-	border:4px solid #9c948c;
+	opacity:.75;
 }
 #initiator_img3:hover {
 	-webkit-animation: grow3 .6s ease-in-out 1;}	
