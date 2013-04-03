@@ -4,17 +4,22 @@ $(document).ready(function() {
 	
 	$("#small-books").hide();
 	$("#small-books2").hide();
+	$("#small-books3").hide();
 	$("#big-books").hide();
 	$("#big-books2").hide();
+	$("#big-books3").hide();
 	$("#book-descriptions").hide();
 
 /* Year_1 calls small books */
 	
 	$(".year_1").on("click",function(){
 	$("#small-books").show();
+	$("#small-books2").hide();
+	$("#small-books3").hide();
 	$("#book-descriptions").hide();
 	$(".title > div").hide()
 	$("#big-books2").hide();
+	$("#big-books3").hide();
    });
 
 /* Small book_1,2,3... calls big book_1,2,3... */
@@ -103,15 +108,18 @@ $(document).ready(function() {
   $(".year_2").on("click",function(){
 	$("#small-books2").show();
 	$("#small-books").hide();
+	$("#small-books3").hide();
 	$("#book-descriptions").hide();
 	$(".title > div").hide()
 	$("#big-books").hide();
+	$("#big-books3").hide();
    });
    
 /* Small book2_1,2,3... calls big book2_1,2,3... */
 	
   $("#small-book2_1 > img").on("click",function(){
     $("#big-books2").show();
+    $("#big-books3").hide();
     $("#book-descriptions").hide();
     $(".title2 > div").hide()
     $("#big-book2_1").show();
@@ -152,6 +160,34 @@ $(document).ready(function() {
     $("#big-book2_6").show();
    });
    
+/* Year_3 calls small books */
+	
+	$(".year_3").on("click",function(){
+	$("#small-books3").show();
+	$("#small-books2").hide();
+	$("#small-books").hide();
+	$("#book-descriptions").hide();
+	$(".title > div").hide()
+	$("#big-books3").hide();
+	$("#big-books2").hide();
+	$("#big-books").hide();
+   });
+
+/* Small book3_1,2,3... calls big book3_1,2,3... */
+	
+  $("#small-book3_1 > img").on("click",function(){
+    $("#big-books3").show();
+    $("#book-descriptions").hide();
+    $(".title2 > div").hide()
+    $("#big-book3_1").show();
+   });
+   
+   $("#small-book3_2 > img").on("click",function(){
+    $("#big-books3").show();
+    $("#book-descriptions").hide();
+    $(".title2 > div").hide()
+    $("#big-book3_2").show();
+   });
   
  });
  

@@ -410,6 +410,24 @@ h6 {
 	display: inline;
 	margin: 0 2px 0 px;
 }
+		/* SMALL BOOKS 3*/
+#small-books3 {
+	width:316px;
+	height:118px;
+	position: absolute;
+	margin-left:180px;
+	margin-top:-450px;
+}
+#small-books3 ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books3 li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
 		/* BIG BOOKS 1 */
 #big-books {
 	display:block;
@@ -485,6 +503,22 @@ h6 {
 	position: relative;
 }
 #big-book2_6 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+		/* BIG BOOKS 3 */
+#big-books3 {
+	display:block;
+}
+#big-book3_1 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+#big-book3_2 {
 	left:194px;
 	top:19px;
 	float:left;
