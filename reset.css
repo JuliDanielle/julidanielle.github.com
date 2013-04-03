@@ -230,12 +230,13 @@ h5 {
 	color:rgb(215, 217, 219);
 }
 h6 {
-	font-family: 'prelo_light_sans';
+	font-family: 'prelo_book';
 	font-size:.5em;
 	text-align:center;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	color:rgb(215, 217, 219);
+	color: rgb(116, 80, 67);
+	opacity:.7;
 }
 
 #main-nav {
@@ -789,6 +790,10 @@ h6 {
 	line-height:20pt;
 	width:230px;
 	margin:15px 0px 0px 10px
+}
+#footer{
+	margin-top:25px;
+	width:100%;
 }
 /*#stat-section p {
 	font-family: 'prelo_light';
