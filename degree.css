@@ -1,0 +1,824 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:1024px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+
+@font-face{ 
+	font-family: 'prelo_hairline';
+	src: url('preloslab-hairline-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-hairline-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-hairline-webfont.ttf') format('truetype'),
+	     url('preloslab-book-webfont.svg#prelo_hairline') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_light';
+	src: url('preloslab-light-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-light-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-light-webfont.ttf') format('truetype'),
+	     url('preloslab-book-webfont.svg#prelo_light') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_book';
+	src: url('preloslab-book-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-book-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-book-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-book-webfont.ttf') format('truetype'),
+	     url('preloslab-book-webfont.svg#prelo_book') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_medium';
+	src: url('preloslab-medium-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-medium-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-medium-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_medium') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_bold';
+	src: url('preloslab-bold-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-bold-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-bold-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_bold') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_black';
+	src: url('preloslab-black-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-black-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-black-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-black-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_black') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_light_sans';
+	src: url('prelo-light-webfont.eot');
+	src: url('fonts/webfontkit-prelo/prelo-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/prelo-light-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/prelo-light-webfont.ttf') format('truetype'),
+	     url('prelo-light-webfont.svg#prelo_black') format('svg');
+}
+
+
+body { 
+		margin-right:auto;
+		margin-left:auto; 
+		width: 100% 
+		text-align:center;
+		max-width:2000px;
+		min-width:600px;
+		height:2000px;
+		background-color:rgb(240, 240, 240);
+		}
+#background_1 {
+		background-image: url(img/book-wireframes/title-background.jpg);
+		height:568px;
+		width:1024px;
+		position:relative;
+		margin:0 auto;
+}
+#background_2 {
+		background-image: url(img/book-wireframes/paperTextureEndless.jpg);
+		height:1740px;
+		width:1024px;
+		position:relative;
+		margin:0 auto;
+		top:-65px;
+}
+#background_3 {
+		height:568px;
+		width:1024px;
+		position:relative;
+		margin:0px auto 0px auto;
+		top:-633px;
+}
+#background_4 {
+		background-image: url(img/book-wireframes/stat-background2.jpg);
+		height:6000px;
+		width:1024px;
+		position:relative;
+		margin:0 auto;
+		top:-640px;
+		
+}
+#site-wrapper {
+		height:568px;
+		width:100%;
+}
+#site-title {
+		height:200px;
+		padding-top:90px;
+		width:100%;
+}
+
+h1 {
+	font-family: 'prelo_medium';
+	font-size:6em;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	line-height:100px;
+	color:rgb(215, 217, 219);
+}
+h2 {
+	font-family: 'prelo_book';
+	font-size:2.1em;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	margin-top:7px;
+	color:rgb(215, 217, 219);
+}
+h4 {
+	font-family: 'prelo_book';
+	font-size:3.5em;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	color:rgb(215, 217, 219);
+}
+h3 {
+	font-family: 'prelo_light';
+	font-size:1.8em;
+	text-align:center;
+	letter-spacing: 2px;
+	margin-top:7px;
+	color:rgb(215, 217, 219);
+	line-height:1.2em;
+}
+h5 {
+	font-family: 'prelo_bold';
+	font-size:12em;
+	text-align:left;
+	letter-spacing: 1.8px;
+	color:rgb(215, 217, 219);
+	margin-top:30px;
+	margin-left:100px;
+}
+h6 {
+	font-family: 'prelo_book';
+	font-size:.5em;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: rgb(116, 80, 67);
+	opacity:.7;
+}
+#main-nav {
+	margin: 0 auto;
+	height: 70px;
+	background: rgba(255, 255, 255, 100);
+	top: 213px;
+	left: 0;
+	width: 100%;
+	position:relative;
+	z-index:10;
+	}
+#main-nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 24px 0 0 0;
+	}
+#main-nav li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2% 0 2%;
+	font-family: "prelo_book";
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 20px;
+}
+#main-nav li a {
+	color: rgb(151, 114, 100);
+	text-decoration: none;
+	outline-style: none;
+	}
+#main-nav li a:hover {
+	opacity: 0.6;
+	text-decoration: none;
+	outline-style: none;
+}
+#about-section {
+	height:300px;
+	padding-top:90px;
+	width:100%;
+}
+#about-section p {
+	font-family: 'prelo_light';
+	font-size:2.3em;
+	color: rgb(116, 80, 67);
+	width:730px;
+	margin-left:90px;
+	line-height:30pt;
+}
+#about-story_1 {
+	margin-top:50px;
+	margin-bottom: 150px;
+}
+#about-story_2 {
+	margin-bottom: 150px;
+}
+#about-story_3 {
+	margin-bottom: 150px;
+}
+#about-story_4 {
+	margin-bottom: 30px;
+}
+#challenges-section{
+	font-family: 'prelo_book';
+	float: left;
+	width: 100%;
+	display: block;
+	height:100%;
+}
+.inner-block {
+	font-family: 'prelo_book';
+	width: 12%;
+	float: left;
+	display: block;
+	height:70%;
+}
+#year-nav{
+	margin: 0 auto;
+	width: 70px;
+	background: rgba(255, 255, 255, 0);
+	top: 25px;
+	left: 0;
+	height: 100%;
+	margin-top:65px;
+	position:relative;
+	}
+#year-nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 24px 0 0 0;
+	}
+#year-nav li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2% 0 2%;
+	font-family: "prelo_book";
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 20px;
+	line-height:2em;
+}
+#year-nav li {
+	color:rgb(116, 80, 67);
+	text-decoration: none;
+	outline-style: none;
+	cursor:pointer;
+	}
+#year-nav li:hover {
+	opacity: 0.6;
+	text-decoration: none;
+	outline-style: none;
+}
+#year-nav p {
+	font-family: 'prelo_book';
+	text-align:center;
+	letter-spacing: 0.2em
+	text-transform: uppercase;
+	font-size:1em;
+	width:55px;
+	margin:0 auto;
+	margin-bottom: 10px;
+	margin-top:-15px;
+	color: rgb(61, 41, 34);
+}
+#arrow-up {
+	left:22px;
+	top:56px;
+	position:relative;
+}
+#arrow-down {
+	position:relative;
+	left:22px;
+	top:-5px;
+}
+.arrow:hover {
+	opacity: 0.7;
+}
+		/* SMALL BOOKS 1 */
+#small-books {
+	width:316px;
+	height:118px;
+	position: relative;
+	margin-left:265px;
+	margin-top:-450px;
+	cursor:pointer;
+}
+#small-books ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
+.small:hover {
+	opacity: 0.7;
+}
+		/* SMALL BOOKS 2 */
+#small-books2 {
+	width:316px;
+	height:118px;
+	position: relative;
+	margin-left:265px;
+	margin-top:-450px;
+	cursor:pointer;
+}
+#small-books2 ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books2 li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
+		/* SMALL BOOKS 3*/
+#small-books3 {
+	width:316px;
+	height:118px;
+	position: absolute;
+	margin-left:265px;
+	margin-top:-450px;
+	cursor:pointer;
+}
+#small-books3 ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books3 li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
+		/* BIG BOOKS 1 */
+#big-books {
+	display:block;
+	cursor:pointer;
+}
+#big-book_1 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book_2 {
+	left:194px;
+	top:20px;
+	float:left;
+	position: relative;
+}
+#big-book_3 {
+	left:193px;
+	top:20px;
+	float:left;
+	position: relative;
+}
+#big-book_4 {
+	left:193px;
+	top:20px;
+	float:left;
+	position: relative;
+}
+#big-book_5 {
+	left:193px;
+	top:20px;
+	float:left;
+	position: relative;
+}
+#big-book_6 {
+	left:193px;
+	top:20px;
+	float:left;
+	position: relative;
+}
+		/* BIG BOOKS 2 */
+#big-books2 {
+	display:block;
+	cursor:pointer;
+}
+#big-book2_1 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_2 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_3 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_4 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_5 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+#big-book2_6 {
+	left:194px;
+	top:19px;
+	float:left;
+	position: relative;
+}
+		/* BIG BOOKS 3 */
+#big-books3 {
+	display:block;
+	cursor:pointer;
+}
+#big-book3_1 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+#big-book3_2 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+#big-book3_3 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+#big-book3_4 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+
+#big-book3_5 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+
+#big-book3_6 {
+	left:194px;
+	top:-310px;
+	float:left;
+	position: relative;
+}
+		/* DESCRIPTION 1 */
+#book-descriptions {
+	display:block;
+	height:350px;
+	width:430px;
+	padding:10px;
+	position:absolute;
+	left:548px;
+	top:120px;
+}
+.description p{
+	font-family: 'prelo_light';
+	font-size:1.4em;
+	color: rgb(116, 80, 67);
+	line-height:20pt;
+}
+#description_1 {
+	float:left;
+}
+#description_2 {
+	float:left;
+}
+#description_3 {
+	float:left;
+}
+#description_4 {
+	float:left;
+}
+#description_5 {
+	float:left;
+}
+#description_6 {
+	float:left;
+}
+		/* DESCRIPTION 2 */
+#book-descriptions2 {
+	display:block;
+	height:350px;
+	width:430px;
+	padding:10px;
+	position:absolute;
+	left:548px;
+	top:120px;
+}
+#description2_1 {
+	float:left;
+}
+#description2_2 {
+	float:left;
+}
+#description2_3 {
+	float:left;
+}
+#description2_4 {
+	float:left;
+}
+#description2_5 {
+	float:left;
+}
+#description2_6 {
+	float:left;
+}
+		/* DESCRIPTION 3 */
+#book-descriptions3 {
+	display:block;
+	height:350px;
+	width:430px;
+	padding:10px;
+	position:absolute;
+	left:548px;
+	top:120px;
+}
+#description3_1 {
+	float:left;
+}
+#description3_2 {
+	float:left;
+}
+#description3_3 {
+	float:left;
+}
+#description3_4 {
+	float:left;
+}
+#description3_5 {
+	float:left;
+}
+#description3_6 {
+	float:left;
+}
+		/* Statistics */
+#stat-section {
+	height:4525px;
+	width:100%;
+	padding-top:30px;
+}
+#isotope {
+	position:relative;
+	margin-left:10px;
+}
+#11000_books {
+	display:block;
+	position:relative;	
+}
+.statement {
+	font-family: 'prelo_medium';
+	font-size:2.5em;
+	text-align:left;
+	letter-spacing: 1px;
+	line-height: 1.0em;
+	margin-top:30px;
+	margin-left:0px;
+	color: rgba(61, 41, 34, 0.76);
+	position:relative;
+	left:600px;
+	top:-185px;
+	width:310px;
+}
+#initiators-title {
+	position:relative;
+	top:0px;
+}
+#initiator_1 {
+	position:relative;
+	display:block;
+}
+#initiator_img1 {
+	position:absolute;
+	left:180px;
+	top:100px;
+	width:150px;
+	margin:20px 0px 0px 20px;
+	opacity:.75;
+	cursor:pointer;
+}
+#initiator_img1:hover {
+	-webkit-animation: grow1 .6s ease-in-out 1;}	
+	
+@-webkit-keyframes grow1 {
+	0% { -webkit-transform: scale(1.2);}
+	50% {  -webkit-transform: scale(1.4);}
+	100% {  -webkit-transform: scale(1);}
+}
+.percent1 {
+	position:absolute;
+	left:220px;
+	top:290px;
+	text-align:center;
+	font-family: 'prelo_black';
+	font-size:4em;
+	color: rgb(116, 80, 67);
+	line-height:18pt;
+	margin:15px 0px 0px 10px;
+}
+.of-challnges1 {
+	position:absolute;
+	left:190px;
+	top:330px;
+	text-align:center;
+	font-family: 'prelo_light';
+	color:white;
+	font-size:1.3em;
+	line-height:20pt;
+	width:175px;
+	margin:15px 0px 0px 10px
+}
+#initiator_2 {
+	position:relative;
+	display:block;
+}
+#initiator_img2 {
+	position:absolute;
+	left:410px;
+	top:100px;
+	width:150px;
+	margin:20px 0px 0px 20px;
+	opacity:.65;
+	cursor:pointer;
+}
+#initiator_img2:hover {
+	-webkit-animation: grow2 .6s ease-in-out 1;}	
+	
+@-webkit-keyframes grow2 {
+	0% { -webkit-transform: scale(1.4);}
+	50% {  -webkit-transform: scale(1.6);}
+	100% {  -webkit-transform: scale(1);}
+}
+.percent2 {
+	position:absolute;
+	left:450px;
+	top:290px;
+	text-align:center;
+	font-family: 'prelo_black';
+	font-size:4em;
+	color: rgb(116, 80, 67);
+	line-height:18pt;
+	margin:15px 0px 0px 10px;
+}
+.of-challnges2 {
+	position:absolute;
+	left:420px;
+	top:330px;
+	text-align:center;
+	font-family: 'prelo_light';
+	color:white;
+	font-size:1.3em;
+	line-height:20pt;
+	width:175px;
+	margin:15px 0px 0px 10px
+}
+#initiator_3 {
+	position:relative;
+	display:block;
+}
+#initiator_img3 {
+	position:absolute;
+	left:640px;
+	top:100px;
+	width:150px;
+	margin:20px 0px 0px 20px;
+	opacity:.75;
+	cursor:pointer;
+}
+#initiator_img3:hover {
+	-webkit-animation: grow3 .6s ease-in-out 1;}	
+	
+@-webkit-keyframes grow3 {
+	0% { -webkit-transform: scale(1.2);}
+	50% {  -webkit-transform: scale(1.4);}
+	100% {  -webkit-transform: scale(1);}
+}
+.percent3 {
+	position:absolute;
+	left:680px;
+	top:290px;
+	text-align:center;
+	font-family: 'prelo_black';
+	font-size:4em;
+	color: rgb(116, 80, 67);
+	line-height:18pt;
+	margin:15px 0px 0px 10px;
+}
+.of-challnges3 {
+	position:absolute;
+	left:625px;
+	top:330px;
+	text-align:center;
+	font-family: 'prelo_light';
+	color:white;
+	font-size:1.3em;
+	line-height:20pt;
+	width:230px;
+	margin:15px 0px 0px 10px
+}
+#footer{
+	width:100%;
+	position:relative;
+	margin:0 auto;
+	top:-600px;
+	padding-bottom:50px;
+}
+/*#stat-section p {
+	font-family: 'prelo_light';
+	font-size:1.3em;
+	color: rgb(116, 80, 67);
+	line-height:18pt;
+	text-align:center;
+}*/
