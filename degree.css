@@ -164,7 +164,7 @@ body {
 }
 #background_4 {
 		background-image: url(img/book-wireframes/stat-background2.jpg);
-		height:6000px;
+		height:6500px;
 		width:1024px;
 		position:relative;
 		margin:0 auto;
@@ -649,6 +649,43 @@ h6 {
 	height:4525px;
 	width:100%;
 	padding-top:30px;
+}
+#usam-quote {
+	position:relative;
+	width:100%;
+	height:500px;
+}
+#uncle-sam {
+	position:absolute;
+	width:350px;
+	height:445px;
+	left:110px;
+	margin-top:12px;
+}
+.ala-quote {
+	font-family: 'prelo_medium';
+	font-size:2.1em;
+	text-align:left;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	margin-top:30px;
+	margin-left:0px;
+	color: rgba(61, 41, 34, 0.84);
+	position:absolute;
+	left:510px;
+	top:60px;
+	width:450px;
+}
+.ala-quote-name {
+	font-family: 'prelo_book';
+	font-size:1em;
+	text-align:right;
+	letter-spacing: .5px;
+	color: rgba(61, 41, 34, 0.9);
+	position:absolute;
+	left:510px;
+	top:300px;
+	width:400px;
 }
 #isotope {
 	position:relative;
