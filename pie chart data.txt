@@ -1,0 +1,74 @@
+initiator: (total: 11)
+
+	Parent:6103
+	Patron:1450
+	Other:1280
+	Administrator:1059
+	Board Member:325
+	Teacher:283
+	Pressure Group:257
+	Religious Group:150
+	Government:145
+	Clergy:115
+	Elected Official:48
+	
+  var	
+	d1 = [[0, 11]],
+	d2 = [[0, 10]],
+	d3 = [[0, 9]],
+	d4 = [[0, 8]],
+	d5 = [[0, 7]],
+	d6 = [[0, 6]],
+	d7 = [[0, 5]],
+	d8 = [[0, 4]],
+	d9 = [[0, 3]],
+	d10 = [[0, 2]],
+	d11 = [[0, 1]],
+	graph;
+
+so make w/ decimals:
+
+  var	
+	d1 = [[0, 87.2]],
+	d2 = [[0, 20.7]],
+	d3 = [[0, 18.3]],
+	d4 = [[0, 15.1]],
+	d5 = [[0, 4.6]],
+	d6 = [[0, 4]],
+	d7 = [[0, 3.7]],
+	d8 = [[0, 2.1]],
+	d9 = [[0, 2]],
+	d10 = [[0, 1.6]],
+	d11 = [[0, .7]],
+
+var	
+	d1 = [[87.2%]],
+	d2 = [[20.7%]],
+	d3 = [[18.3%]],
+	d4 = [[15.1%]],
+	d5 = [[4.6%]],
+	d6 = [[4%]],
+	d7 = [[3.7%]],
+	d8 = [[2.1%]],
+	d9 = [[2%]],
+	d10 = [[1.6%]],
+	d11 = [[.7%]],
+	
+  graph = Flotr.draw(container, [
+    { data : d1, label : 'Parent' },
+    { data : d2, label : 'Patron' },
+    { data : d3, label : 'Other'},
+    { data : d4, label : 'Administrator' },
+    { data : d5, label : 'Board Member' }
+    { data : d6, label : 'Teacher' }
+    { data : d7, label : 'Pressure Group' }
+    { data : d8, label : 'Religious Group' }
+    { data : d9, label : 'Board Member' }
+    { data : d10, label : 'Government' }
+    { data : d11, label : 'Elected Official' }
+	
+----------------------------------------
+
+institution: (total: 13)
+
+reason (total: 20)

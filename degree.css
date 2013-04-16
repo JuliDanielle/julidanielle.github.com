@@ -371,11 +371,12 @@ h6 {
 }
 		/* SMALL BOOKS 1 */
 #small-books {
-	width:616px;
+	width:778px;
 	height:118px;
 	position: relative;
-	margin-left:265px;
-	margin-top:-450px;
+	margin-left:220px;
+	margin-top:-500px;
+	margin-bottom:25px;
 	cursor:pointer;
 }
 #small-books ul {
@@ -393,11 +394,12 @@ h6 {
 }
 		/* SMALL BOOKS 2 */
 #small-books2 {
-	width:316px;
+	width:770px;
 	height:118px;
 	position: relative;
-	margin-left:265px;
-	margin-top:-450px;
+	margin-left:220px;
+	margin-top:-500px;
+	margin-bottom:25px;
 	cursor:pointer;
 }
 #small-books2 ul {
@@ -412,11 +414,12 @@ h6 {
 }
 		/* SMALL BOOKS 3*/
 #small-books3 {
-	width:316px;
+	width:770px;
 	height:118px;
 	position: absolute;
-	margin-left:265px;
-	margin-top:-450px;
+	margin-left:220px;
+	margin-top:-500px;
+	margin-bottom:25px;
 	cursor:pointer;
 }
 #small-books3 ul {
