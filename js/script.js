@@ -2,13 +2,13 @@ $(document).ready(function() {
 
 /* Start hide all but year nav */
 	
-	$("#small-books").hide();
+	$("#small-books").show();
 	$("#small-books2").hide();
 	$("#small-books3").hide();
-	$("#big-books").hide();
+	$("#big-books").show();
 	$("#big-books2").hide();
 	$("#big-books3").hide();
-	$("#book-descriptions").hide();
+	$("#book-descriptions1").show();
 	$("#book-descriptions2").hide();
 	$("#book-descriptions3").hide();
 
@@ -16,9 +16,10 @@ $(document).ready(function() {
 	
 	$(".year_1").on("click",function(){
 	$("#small-books").show();
+	$("#big-books").show();
 	$("#small-books2").hide();
 	$("#small-books3").hide();
-	$("#book-descriptions").hide();
+	$("#book-descriptions1").show();
 	$(".title > div").hide()
 	$("#big-books2").hide();
 	$("#big-books3").hide();
@@ -338,6 +339,7 @@ $(document).ready(function() {
 	$("#book-descriptions").hide();
 	$(".title > div").hide()
 	$("#big-books").hide();
+	$("#big-books2").show();
 	$("#big-books3").hide();
    });
    
@@ -444,6 +446,7 @@ $(document).ready(function() {
    });
   
  });
+ 
  
  
 	

@@ -371,7 +371,7 @@ h6 {
 }
 		/* SMALL BOOKS 1 */
 #small-books {
-	width:316px;
+	width:616px;
 	height:118px;
 	position: relative;
 	margin-left:265px;
@@ -558,15 +558,15 @@ h6 {
 #book-descriptions {
 	display:block;
 	height:350px;
-	width:430px;
+	width:400px;
 	padding:10px;
 	position:absolute;
 	left:548px;
-	top:120px;
+	top:200px;
 }
 .description p{
 	font-family: 'prelo_light';
-	font-size:1.4em;
+	font-size:1.25em;
 	color: rgb(116, 80, 67);
 	line-height:20pt;
 }
@@ -807,6 +807,13 @@ h6 {
 	line-height:20pt;
 	width:230px;
 	margin:15px 0px 0px 10px
+}
+#pie-initiator {
+	top:370px;
+	width : 600px;
+    height: 584px;
+    margin: 8px auto;
+    position: relative;
 }
 #footer{
 	width:100%;
