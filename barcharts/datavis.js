@@ -13,8 +13,8 @@ $(function() {
       var dom = parseInt(name.domestic);
       var incFraction = inc / maxIncident;
       var domFraction = dom / maxDom;
-      var incWidth = incFraction * 1000;
-   	  var domWidth = domFraction * 100;
+      var incWidth = incFraction * 2000;
+   	  var domWidth = domFraction * 500;
    	  var maxIncident = 10652;
       var maxDom = 2841;
       
@@ -42,15 +42,12 @@ $(function() {
       
    /*   var clear = $("<div>")
     				.addClass("clear");
-    
-    $("body").append(clear);
-    
-    */
+    $("body").append(clear);    */
 
       			
-      $("p").append(row); 
-      console.log(name)
-      i++;
+$("p").append(row); 
+console.log(name)
+i++;
     }
     
 
