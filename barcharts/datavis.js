@@ -13,15 +13,12 @@ $(function() {
       var fullName = name.name;
       var inc = parseInt(name.incidents);
       var dom = parseInt(name.domestic);
-      
-      var maxIncident = 10652;
-      var maxDom = 2841;
-      
       var incFraction = inc / maxIncident;
       var domFraction = dom / maxDom;
-      
-      var incWidth = incFraction * 5000;
-   	  var domWidth = domFraction * 500;
+      var incWidth = incFraction * 1000;
+   	  var domWidth = domFraction * 100;
+   	  var maxIncident = 10652;
+      var maxDom = 2841;
       
       var row = $("<div>").addClass("row");
       
