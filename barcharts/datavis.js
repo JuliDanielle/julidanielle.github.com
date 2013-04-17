@@ -1,12 +1,10 @@
 $(function() {
 	$("<p>").text("boston crime barchart")
 			.appendTo("body");
-
 });
 
 $(function() {
 
-  
     var i = 0;
     while(i < data.length) {
       var name = data[i];
@@ -27,16 +25,19 @@ $(function() {
       				.text(fullName + " ")
       				.appendTo(row);
       
-      var incidentDiv = $("<div>")
-      					.css({ width: incWidth })
-      					.addClass("incident")
-      					.text(inc)
-      					.appendTo(row);
        var domesticDiv = $("<div>")
       					.css({ width: domWidth })
       					.addClass("domestic")
       					.text(dom)
       					.appendTo(row);
+      
+      var incidentDiv = $("<div>")
+      					.css({ width: incWidth })
+      					.addClass("incident")
+      					.text(inc)
+      					.appendTo(row);
+      
+      
       
       
    /*   var clear = $("<div>")
