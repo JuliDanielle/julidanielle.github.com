@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head> 
+	<title>Book Challenges</title>
+	<meta chartset="UTF-8">
+	<meta name="keywords" content="Books, Censorship, Book Challenge, Book Ban, American Library Association, youth fiction">
+	<link rel="stylesheet" href="mysite.css" type="text/css" media="screen">
+	<script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.scrollorama.js"></script>
+    <script src="js/myscript.js"></script>
+	<script>
+		$(document).ready(function() {
+        var scrollorama = $.scrollorama({
+        blocks:'.scrollblock'
+    		});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="site-wrapper">
+		<div id="section_1">
+			<img id="book-outline" src="img/book-outline.png" />
+			<div id="site-title">
+				<h1>Book Bans</h1>
+				<h4>and</h4>
+				<h1>Challenges</h1>
+				<h2>An Interactive Infographic</h2>
+			</div>
+		</div>
+		<div id="main-nav">
+			<ul>
+				<li><a href="#scroll_1">About</a></li>
+				<li><a href="#scroll_2">Challenges</a></li>
+				<li><a href="#scroll_3">Stats</a></li>
+			</ul>
+		</div>
+		<div id="section_2">
+			<div class="scrollblock" id="intro1"><!--introduction-->
+ 				<div id="title1">
+					<h5 id="11000">11000</h5>
+					<p class="statement">books have<br>been challenged<br>since 1982.</p>
+				</div>
+ 				<div id="isotope">
+ 					<img src="img/isotope.png" alt="11000-books"/>
+ 				</div>
+			</div>
+			<div class="scrollblock" id="intro2">
+  				<div id="title2"> 
+  					<p class="about">A challenge is an attempt to remove or restrict materials, based upon the objections of a person or group.</p>
+				</div>
+			</div>
+			<div class="scrollblock" id="intro3">
+				<div id="title3"> 
+					<p class="about">The main reason that books are being challenged and banned is that people are concerned for the influence they have<br>on their children.</p>
+				</div>
+			</div>
+			<div class="scrollblock" id="intro4">
+				<div id="title4"> 
+					<p class="about">The problem here is that most of these books shine a light on issues we are and should be talking about as a society.<br>Youth fiction is a main target.</p>
+				</div>
+			</div>
+			<div class="scrollblock" id="section_3">
+				<div id="year-nav">
+				  <img id="arrow-up" class="arrow" src="img/arrow_up.png" alt="upArrow" />
+					<p>Select Year</p>
+					<ul>
+						<li class="year_1">
+							2009
+						</li>
+						<li class="year_2">
+							2010
+						</li>
+						<li class="year_3" >
+							2011 
+						</li>
+					</ul>
+				  <img id="arrow-down" class="arrow" src="img/arrow_down.png" alt="downArrow" />
+				</div>
+			</div>
+			<div id="small-books"><!--SMALL BOOKS 1-->
+				<ul>
+					<li id="small-book_1"><img src="img/covers/1984_s.jpg" /></li>
+					<li id="small-book_2"><img src="img/covers/twilight_s.jpg" /></li>
+					<li id="small-book_3"><img src="img/covers/mockingbird_s.jpg" /></li>
+					<li id="small-book_4"><img src="img/covers/chocolate-war_s.jpg" /></li>
+					<li id="small-book_5"><img src="img/covers/perks_s.jpg" /></li>
+					<li id="small-book_6"><img src="img/covers/sisters-keeper_s.jpg" /></li>
+					<li id="small-book_7"><img src="img/covers/and-tango_s.jpg" /></li>
+					<li id="small-book_8"><img src="img/covers/color-purple_s.jpg" /></li>
+					<li id="small-book_9"><img src="img/covers/catcher_s.jpg" /></li>
+					<li id="small-book_10"><img src="img/covers/the-earth_s.jpg" /></li>				
+				</ul>
+			</div>
+			<div id="big-books" style="display: block;"><!--BIG BOOKS 1 & Descriptions--> 
+				<article class="title"> 
+					<div id="big-book_1" style="display: block;">
+						<img class="show_it1" src="img/bigbooks/big-book1.png" alt="big1" />
+						<p id="description_1" class="description">Orwell's 1984 is a heavily challenged book. The ALA routinely lists it as one of the most challenged books and it's in the top 10 list of challenged classics. The book warns of totalitarian censorship and chronicles the grim future of a society robbed of free will, privacy and truth.</p>
+					</div>
+				</article>
+				<article class="title"> 
+					<div id="big-book_2" style="display: none;"> 
+						<img class="show_it2" src="img/bigbooks/big-book2.png" alt="big2" />
+						<p id="description_2" class="description">Meyer's Twilight series was ranked No. 5 on the ALA's report of challenged books in 2010. The stories are a supernatural saga of vampires and teen romance. They were removed from numerous school libraries for having content that was too sexual and going against religious beliefs.</p>
+					</div>
+				</article>
+				<article class="title"> 
+					<div id="big-book_3" style="display: none;"> 
+						<img class="show_it3" src="img/bigbooks/big-book3.png" alt="big3" />
+						<p id="description_3" class="description">To Kill a Mockingbird is a challenged book.</p>
+					</div>
+				</article>
+				<article class="title"> 
+					<div id="big-book_4" style="display: none;"> 
+						<img class="show_it4" src="img/bigbooks/big-book4.png" alt="big4" /> 
+						<p id="description_4" class="description">The Chocolate War is a challenged book.</p>
+					</div>
+				</article>
+				<article class="title"> 
+					<div id="big-book_5" style="display: none;"> 
+						<img class="show_it5" src="img/bigbooks/big-book5.png" alt="big5" /> 
+						<p id="description_5" class="description">The Perks of Being a Wallflower is a challenged book.</p>
+					</div>
+				</article>
+				<article class="title"> 
+					<div id="big-book_6" style="display: none;"> 
+						<img class="show_it6" src="img/bigbooks/big-book6.png" alt="big6" /> 
+						<p id="description_6" class="description">My Sister's Keeper is a challenged book.</p>
+					</div>
+				</article>
+			</div>
+			<div id="small-books2"><!--SMALL BOOKS 2-->
+				<ul>
+					<li id="small-book2_1"><img src="img/covers/crank_s.jpg" /></li>
+					<li id="small-book2_3"><img src="img/covers/nickel-dimed_s.jpg" /></li>
+					<li id="small-book2_2"><img src="img/covers/brave-new_s.jpg"</li>
+					<li id="small-book2_4"><img src="img/covers/twilight_s.jpg" /></li>
+					<li id="small-book2_5"><img src="img/covers/lush_s.jpg" /></li>
+					<li id="small-book2_6"><img src="img/covers/revolutionary_s.jpg" /></li>
+					<li id="small-book2_7"><img src="img/covers/and-tango_s.jpg" /></li>
+					<li id="small-book2_8"><img src="img/covers/true-diary_s.jpg" /></li>
+					<li id="small-book2_9"><img src="img/covers/hunger-games_s.jpg" /></li>
+					<li id="small-book2_10"><img src="img/covers/what-mother_s.jpg" /></li>
+				</ul>
+			</div>
+			<div id="big-books2" style="display: block;"><!--BIG BOOKS 2 & Descriptions--> 
+				<article class="title2"> 
+					<div id="big-book2_1" style="display: block;">
+						<img class="2show_it1" src="img/bigbooks/big-book2_1.png" alt="2big1" />
+						<p id="description2_1" class="description">Crank is a challenged book.</p>
+					</div>
+				</article>
+				<article class="title2"> 
+					<div id="big-book2_2" style="display: none;">
+						<img class="2show_it2" src="img/bigbooks/big-book2_2.png" alt="2big2" />
+						<p id="description2_2" class="description">Brave New World is a challenged book.</p>
+					</div>
+				</article>
+				<article class="title2"> 
+					<div id="big-book2_3" style="display: none;">
+						<img class="2show_it3" src="img/bigbooks/big-book2_3.png" alt="2big3" />
+						<p id="description2_3" class="description">Nickel and Dimed is a challenged book.</p>
+					</div>
+				</article>
+				<article class="title2"> 
+					<div id="big-book2_4" style="display: none;">
+						<img class="2show_it4" src="iimg/bigbooks/big-book2.png" alt="2big4" />
+						<p id="description2_4" class="description">The Twilight Series are challenged books.</p>
+					</div>
+				</article>
+				<article class="title2"> 
+					<div id="big-book2_5" style="display: none;">
+						<img class="2show_it5" src="img/bigbooks/big-book2_4.png" alt="2big5" />
+						<p id="description2_5" class="description">Lush is a challenged book.</p>
+					</div>
+				</article>
+				<article class="title2"> 
+					<div id="big-book2_6" style="display: none;">
+						<img class="2show_it6" src="img/bigbooks/big-book2_5.png" alt="2big6" />
+						<p id="description2_6" class="description">Revolutionary Voices is a challenged book.</p>
+					</div>
+				</article>
+			</div>
+			<div id="small-books3"><!--SMALL BOOKS 3-->
+				<ul>
+					<li id="small-book3_1"><img src="img/covers/small-books_1.png" /></li>
+					<li id="small-book3_2"><img src="img/covers/small-books_9.png" /></li>
+					<li id="small-book3_3"><img src="img/covers/small-books_5.png" /></li>
+					<li id="small-book3_4"><img src="img/covers/small-books_7.png" /></li>
+					<li id="small-book3_5"><img src="img/covers/small-books_4.png" /></li>
+					<li id="small-book3_6"><img src="img/covers/small-books_12.png" /></li>
+				</ul>
+			</div>
+			<div id="big-books3" style="display: block;"><!--BIG BOOKS 3 & Descriptions-->
+				<article class="title3"> 
+					<div id="big-book3_1" style="display: block;">
+					<img class="3show_it1" src="img/bigbooks/big-book3_1.png" alt="3big1" />
+					</div>
+				</article>
+				<article class="title3"> 
+					<div id="big-book3_2" style="display: none;">
+					<img class="3show_it2" src="img/bigbooks/big-book3_2.png" alt="3big2" />
+					</div>
+				</article>
+				<article class="title3"> 
+					<div id="big-book3_3" style="display: none;">
+					<img class="3show_it3" src="img/bigbooks/big-book2_2.png" alt="3big3" />
+					</div>
+				</article>
+				<article class="title3"> 
+					<div id="big-book3_4" style="display: none;">
+					<img class="3show_it4" src="img/bigbooks/big-book3_3.png" alt="3big4" />
+					</div>
+				</article>
+				<article class="title3"> 
+					<div id="big-book3_5" style="display: none;">
+					<img class="3show_it5" src="img/bigbooks/big-book3.png" alt="3big5" />
+					</div>
+				</article>
+				<article class="title3"> 
+					<div id="big-book3_6" style="display: none;">
+					<img class="3show_it6" src="img/bigbooks/big-book3_4.png" alt="3big6" />
+					</div>
+				</article>
+			</div>
+			<div class="scrollblock" id="section_4"><!--STATS-->
+				<div id="usam-quote">
+					<img id="uncle-sam" src="img/uncle-sam.png" alt="uncle-sam"/>
+					<p class="ala-quote">"Not every book is right for each reader, but we should have the right to think for ourselves and allow others to do the same."</p>
+					<p class="ala-quote-name"> - A.L.A. President Roberta Stevens</p>
+				</div>
+			</div>
+			<div class="scrollblock" id="section_7"><!--STATS TITLE-->
+				<div id="initiators-title">
+					<h2>Who is it that challenges books?</h2>
+					<h3>The top initiators are:</h3>
+					<img id="initiator-graphic" src="img/initiator-graphic.png" alt="chart1"/>
+				</div>
+			</div>
+			<div class="scrollblock" id="section_8">
+				<div id="institution-title">
+					<h2>Where are books being removed?</h2>
+					<h3>The main institutions are:</h3>
+					<img id="institution-graphic" src="img/institution-graphic.png" alt="chart2"/>
+				</div>
+			</div>
+			<div class="scrollblock" id="section_9">
+				<div id="byyear-title">
+					<h2>How many challenges in the last 10 years?</h2>
+					<h3>Challenges by year:</h3>
+					<img id="byyear-graphic" src="img/year-graphic.png" alt="chart3"/>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+				<h6>Site made by Julianne Jensen MassArt 2013<br>Statistics from <a href="http://www.ala.org">ALA.org</a></h6>
+		</div>
+	</div>			
+<script>
+
+$(function() {
+    function eventCallback() {
+      $(".box").fadeOut();
+      // $(this).fadeOut();
+    }
+
+    $(".box").on("click",eventCallback);
+
+});
+
+
+		$(document).ready(function() {
+			
+			
+			var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
+			
+			
+			scrollorama.onBlockChange(function() {
+				var i = scrollorama.blockIndex;
+				$('#console')
+					.css('display','block')
+					.text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
+			});
+			
+			
+		
+			
+			scrollorama
+				//.animate('#title1',{ duration: 600, property:'left', start:-1000, end:130 })
+				.animate('#title1',{ delay:50, duration: 120, property:'zoom', start: 0, end: 1.3 })
+				//.animate('#isotope',{ delay:250, duration: 200, property:'opacity', start:0 })
+				//.animate('#isotope',{ delay:570, duration: 120, property:'zoom', start:0, end:1. })
+				.animate('#isotope',{ delay: 400, duration: 300, property:'opacity', start:0 })
+				//.animate('#title2',{ duration: 900, property:'rotate', start:180,end:360 })
+				.animate('#title2',{ delay:320, duration: 600, property:'bottom', start:-1000, end:50 })
+				.animate('#title3',{ delay:520, duration: 600, property:'bottom', start:-1000, end:10 })
+				.animate('#title4',{ delay:520, duration: 600, property:'bottom', start:-1000, end:0 })
+				.animate('#usam-quote',{ delay:840, duration: 370, property:'rotate', start:-0, end:365 })
+				.animate('#initiators-title',{ delay:300, duration: 600, property:'left', start:-10000,end: 0 })
+				.animate('#institution-title',{ delay:200, duration: 600, property:'right', start:-10000,end: 0 })
+				.animate('#byyear-title',{ delay:300, duration: 600, property:'left', start:-10000,end: 0 })
+			});
+			
+</script>
+</body>
+</html>

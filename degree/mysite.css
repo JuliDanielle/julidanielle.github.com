@@ -1,0 +1,571 @@
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:1024px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+@font-face{ 
+	font-family: 'prelo_light';
+	src: url('preloslab-light-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-light-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-light-webfont.ttf') format('truetype'),
+	     url('preloslab-book-webfont.svg#prelo_light') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_book';
+	src: url('preloslab-book-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-book-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-book-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-book-webfont.ttf') format('truetype'),
+	     url('preloslab-book-webfont.svg#prelo_book') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_medium';
+	src: url('preloslab-medium-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-medium-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-medium-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_medium') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_bold';
+	src: url('preloslab-bold-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-bold-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-bold-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_bold') format('svg');
+}
+@font-face{ 
+	font-family: 'prelo_black';
+	src: url('preloslab-black-webfont.eot');
+	src: url('fonts/webfontkit-prelo/preloslab-black-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/webfontkit-prelo/preloslab-black-webfont.woff') format('woff'),
+	     url('fonts/webfontkit-prelo/preloslab-black-webfont.ttf') format('truetype'),
+	     url('preloslab-medium-webfont.svg#prelo_black') format('svg');
+}
+h1 {
+	font-family: 'prelo_medium';
+	font-size:6em;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	line-height:100px;
+	color:rgb(215, 217, 219);
+}
+h2 {
+	font-family: 'prelo_book';
+	font-size:2.1em;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	margin-top:7px;
+	color:rgb(215, 217, 219);
+}
+h3 {
+	font-family: 'prelo_light';
+	font-size:1.8em;
+	text-align:center;
+	letter-spacing: 2px;
+	margin-top:7px;
+	color:rgb(215, 217, 219);
+	line-height:1.2em;
+}
+h4 {
+	font-family: 'prelo_book';
+	font-size:3.5em;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	color:rgb(215, 217, 219);
+}
+h5 {
+	font-family: 'prelo_bold';
+	font-size:12em;
+	text-align:left;
+	letter-spacing: 1.8px;
+	color:rgb(215, 217, 219);
+	margin-top:30px;
+	margin-left:100px;
+}
+h6 {
+	font-family: 'prelo_bold';
+	font-size:.65em;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	word-spacing: 2.5px;
+	line-height: 1.6em;
+	color: black;
+	opacity:.5;
+}
+body {
+	background-image: url('img/brown-background.jpg');
+	background-repeat:repeat;
+	margin-right:auto;
+	margin-left:auto; 
+	width: 100% 
+	text-align:center;
+	height:9810px;
+	max-width:1400px;
+	min-width:600px;
+	position:reltative;
+	
+}
+#site-wrapper {
+	position:relative;
+	width: 100% 
+	height:10000px;
+}
+#section_1 {
+	height:500px;
+	position:relative;
+	width: 1240px;
+	margin:0 auto;
+}
+#book-outline {
+	position:absolute;
+	top:20px;
+	margin:0 auto;
+	width:120%;
+	left:-125px;
+}
+#site-title {
+		height:200px;
+		padding-top:90px;
+		width:100%;
+}
+#main-nav {
+	margin: 0 auto;
+	height: 70px;
+	background: rgba(255, 255, 255, .8);
+	top: 0px;
+	left: 0;
+	width: 100%;
+	position:relative;
+	z-index:100;
+	}
+#main-nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 24px 0 0 0;
+	}
+#main-nav li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2% 0 2%;
+	font-family: "prelo_book";
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 20px;
+}
+#main-nav li a {
+	color: rgb(151, 114, 100);
+	text-decoration: none;
+	outline-style: none;
+	}
+#main-nav li a:hover {
+	opacity: 0.6;
+	text-decoration: none;
+	outline-style: none;
+}
+#section_2 {
+	background-image: url('img/white-background.jpg');
+	height:9040px;
+	position:relative;
+	width: 1240px;
+	margin:0 auto;
+	top:-70px;
+	padding-top:160px;
+}
+.scrollblock {
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+#intro1 {
+	top:-900px;
+	background-color: #7fcbbf;
+	height: 250px;
+}
+#title1{
+position:relative;
+margin-left:130px;
+}
+#isotope {
+	display:block;
+	position:relative;
+	margin-left:130px;
+	top:-100px;
+}
+.statement {
+	font-family: 'prelo_medium';
+	font-size:2.5em;
+	text-align:left;
+	letter-spacing: 1px;
+	line-height: 1.0em;
+	margin-top:30px;
+	margin-left:0px;
+	color: rgba(61, 41, 34, 0.76);
+	position:relative;
+	left:600px;
+	top:-185px;
+	width:310px;
+}
+.about {
+	font-family: 'prelo_light';
+	font-size:2.3em;
+	color: rgb(116, 80, 67);
+	width:730px;
+	margin-left:90px;
+	line-height:30pt;
+	text-align:center;
+}
+#intro2 {
+	top:3750px;
+	left:170px;
+	height:220px;
+}
+#intro3 {
+	top:3650px;
+	left:170px;
+	height: 200px;
+}
+#intro4 {
+	top:3650px;
+	left:170px;
+	height: 200px;
+}
+#section_3 {
+	top:3690px;
+	height: 620px;
+	position:relative;
+	width: 1240px;
+	margin:0 auto;
+}
+#year-nav{
+	width: 70px;
+	height: 260px;
+	background: rgba(255, 255, 255, 0);
+	left: 100px;
+	padding-top:150px;
+	position:relative;
+	}
+#year-nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 24px 0 0 0;
+	}
+#year-nav li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2% 0 2%;
+	font-family: "prelo_book";
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 20px;
+	line-height:2em;
+}
+#year-nav li {
+	color:rgb(116, 80, 67);
+	text-decoration: none;
+	outline-style: none;
+	cursor:pointer;
+	}
+#year-nav li:hover {
+	opacity: 0.6;
+	text-decoration: none;
+	outline-style: none;
+}
+#year-nav p {
+	font-family: 'prelo_book';
+	text-align:center;
+	letter-spacing: 0.2em
+	text-transform: uppercase;
+	font-size:1em;
+	width:55px;
+	margin:0 auto;
+	margin-bottom: 10px;
+	margin-top:-15px;
+	color: rgb(61, 41, 34);
+}
+#arrow-up {
+	left:22px;
+	top:56px;
+	position:relative;
+}
+#arrow-down {
+	position:relative;
+	left:22px;
+	top:-5px;
+}
+.arrow:hover {
+	opacity: 0.7;
+}
+		/* SMALL BOOKS 1 */
+#small-books {
+	position: absolute;
+	margin-left:300px;
+	margin-top:-410px;
+	margin-bottom:25px;
+	cursor:pointer;
+	top:6150px;
+}
+#small-books ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
+		/* BIG BOOKS 1 */
+.description {
+	float:left;
+	font-family: 'prelo_light';
+	font-size:1.25em;
+	color: rgb(116, 80, 67);
+	line-height:20pt;
+	height:350px;
+	width:400px;
+	padding:10px;
+	left:395px;
+	top:70px;
+	position:absolute;
+}
+#big-books {
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	width:800px;
+	left:295px;
+	top:5930px;
+}
+	/* SMALL BOOKS 2 */
+#small-books2 {
+	position: absolute;
+	margin-left:300px;
+	margin-top:-410px;
+	margin-bottom:25px;
+	cursor:pointer;
+	top:6150px;
+}
+#small-books2 ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books2 li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
+		/* BIG BOOKS 2 */
+#big-books2 {
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	width:800px;
+	left:295px;
+	top:5930px;
+}
+		/* SMALL BOOKS 3 */
+#small-books3 {
+	position: absolute;
+	margin-left:300px;
+	margin-top:-410px;
+	margin-bottom:25px;
+	cursor:pointer;
+	top:6150px;
+}
+#small-books3 ul {
+	margin: 0 auto;
+	text-align:left;
+	padding: 5px 0 0 0;
+}
+#small-books3 li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 px;
+}
+		/* BIG BOOKS 3 */
+#big-books3 {
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	width:800px;
+	left:295px;
+	top:5930px;
+}
+#section_4 {
+	top:3690px;
+	height: 600px;
+	position:relative;
+	margin:0 auto;
+	padding-top:30px;
+}
+#usam-quote {
+	position:relative;
+	width:100%;
+	height:500px;
+	left:90px;
+}
+#uncle-sam {
+	position:absolute;
+	width:350px;
+	height:445px;
+	left:110px;
+	margin-top:12px;
+}
+.ala-quote {
+	font-family: 'prelo_medium';
+	font-size:2.1em;
+	text-align:left;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	margin-top:30px;
+	margin-left:0px;
+	color: rgba(61, 41, 34, 0.84);
+	position:absolute;
+	left:510px;
+	top:60px;
+	width:450px;
+}
+.ala-quote-name {
+	font-family: 'prelo_book';
+	font-size:1em;
+	text-align:right;
+	letter-spacing: .5px;
+	color: rgba(61, 41, 34, 0.9);
+	position:absolute;
+	left:510px;
+	top:300px;
+	width:400px;
+}
+#section_7 {
+	height:100px;
+	position:relative;
+	width: 1240px;
+	margin:0 auto;
+	top:3600px;
+}
+#initiators-title h2,h3{
+	position:relative;
+	color: rgba(148, 103, 81, 0.88);
+	margin-bottom:20px;
+}
+#initiator-graphic {
+	position:relative;
+	left:250px;
+	margin-top:60px;
+}
+#section_8 {
+	height:100px;
+	position:relative;
+	width: 1240px;
+	margin:0 auto;
+	top:4150px;
+}
+#institution-title h2,h3{
+	position:relative;
+	color: rgba(148, 103, 81, 0.88);
+	margin-bottom:20px;
+}
+#institution-graphic {
+	position:relative;
+	left:200px;
+	margin-top:30px;
+}
+#section_9 {
+	height:100px;
+	position:relative;
+	width: 1240px;
+	margin:0 auto;
+	top:4890px;
+}
+#byyear-title h2,h3{
+	position:relative;
+	color: rgba(148, 103, 81, 0.88);
+	margin-bottom:20px;
+}
+#byyear-graphic {
+	position:relative;
+	left:240px;
+	margin-top:30px;
+}
+#footer{
+	width:100%;
+	position:relative;
+	margin:0 auto;
+	top: -30px;
+	padding-bottom:0px;
+}
