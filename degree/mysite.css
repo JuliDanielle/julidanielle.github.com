@@ -254,14 +254,14 @@ body {
 	position:absolute;
 	margin-left:500px;
 	height:110px;
-	left:0px;
+	left:-30px;
 	top:120px;
 }
 #intro0 h3 {
 	font-family: "prelo_medium";
 }
 #intro0 img {
-	left:115px;
+	left:110px;
 	position:relative;
 }
 #intro1 {
