@@ -202,20 +202,6 @@ body {
 		padding-top:90px;
 		width:100%;
 }
-#intro0 {
-	top:-40px;
-	position:relative;
-	margin:0 auto;
-	height:110px;
-}
-#intro0 h3 {
-	font-family: "prelo_medium";
-}
-#intro0 img {
-	left:580px;
-	top:-10px;
-	position:relative;
-}
 #main-nav {
 	margin: 0 auto;
 	height: 70px;
@@ -263,6 +249,20 @@ body {
     margin: 0;
     width: 100%;
     position: relative;
+}
+#intro0 {
+	position:absolute;
+	margin-left:500px;
+	height:110px;
+	left:0px;
+	top:120px;
+}
+#intro0 h3 {
+	font-family: "prelo_medium";
+}
+#intro0 img {
+	left:115px;
+	position:relative;
 }
 #intro1 {
 	top:-900px;
