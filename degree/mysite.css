@@ -151,7 +151,7 @@ h5 {
 	font-size:12em;
 	text-align:left;
 	letter-spacing: 1.8px;
-	color:rgb(215, 217, 219);
+	color:rgb(165, 142, 118);
 	margin-top:30px;
 	margin-left:100px;
 }
@@ -201,6 +201,20 @@ body {
 		height:200px;
 		padding-top:90px;
 		width:100%;
+}
+#intro0 {
+	top:-40px;
+	position:relative;
+	margin:0 auto;
+	height:110px;
+}
+#intro0 h3 {
+	font-family: "prelo_medium";
+}
+#intro0 img {
+	left:580px;
+	top:-10px;
+	position:relative;
 }
 #main-nav {
 	margin: 0 auto;
@@ -252,7 +266,6 @@ body {
 }
 #intro1 {
 	top:-900px;
-	background-color: #7fcbbf;
 	height: 250px;
 }
 #title1{

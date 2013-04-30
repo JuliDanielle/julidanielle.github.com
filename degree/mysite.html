@@ -36,7 +36,12 @@
 				<li><a href="#scroll_3">Stats</a></li>
 			</ul>
 		</div>
+		
 		<div id="section_2">
+			<div id="intro0"><!--directions-->
+				<h3>Scroll down to begin</h3>
+				<img src="img/direction-arrow.png" />
+			</div>
 			<div class="scrollblock" id="intro1"><!--introduction-->
  				<div id="title1">
 					<h5 id="11000">11000</h5>
@@ -45,6 +50,7 @@
  				<div id="isotope">
  					<img src="img/isotope.png" alt="11000-books"/>
  				</div>
+ 				<a id="scroll_1"></a>
 			</div>
 			<div class="scrollblock" id="intro2">
   				<div id="title2"> 
@@ -61,7 +67,7 @@
 					<p class="about">The problem here is that most of these books shine a light on issues we are and should be talking about as a society.<br>Youth fiction is a main target.</p>
 				</div>
 			</div>
-			<div class="scrollblock" id="section_3">
+			<a id="scroll_2"><div class="scrollblock" id="section_3"></a>
 				<div id="year-nav">
 				  <img id="arrow-up" class="arrow" src="img/arrow_up.png" alt="upArrow" />
 					<p>Select Year</p>
@@ -225,7 +231,7 @@
 					</div>
 				</article>
 			</div>
-			<div class="scrollblock" id="section_4"><!--STATS-->
+			<a id="scroll_3"><div class="scrollblock" id="section_4"></a><!--STATS-->
 				<div id="usam-quote">
 					<img id="uncle-sam" src="img/uncle-sam.png" alt="uncle-sam"/>
 					<p class="ala-quote">"Not every book is right for each reader, but we should have the right to think for ourselves and allow others to do the same."</p>
@@ -298,7 +304,7 @@ $(function() {
 				.animate('#title3',{ delay:520, duration: 600, property:'bottom', start:-1000, end:10 })
 				.animate('#title4',{ delay:520, duration: 600, property:'bottom', start:-1000, end:0 })
 				.animate('#usam-quote',{ delay:840, duration: 370, property:'rotate', start:-0, end:365 })
-				.animate('#initiators-title',{ delay:300, duration: 600, property:'left', start:-10000,end: 0 })
+				.animate('#initiators-title',{ delay:300, duration: 700, property:'left', start:-10000,end: 0 })
 				.animate('#institution-title',{ delay:200, duration: 600, property:'right', start:-10000,end: 0 })
 				.animate('#byyear-title',{ delay:300, duration: 600, property:'left', start:-10000,end: 0 })
 			});
