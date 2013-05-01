@@ -33,6 +33,17 @@
         title: "CommonwealthTenantsAssociationCG",
         map: myMap
       })
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(42.3532753, -71.1377981),
+        title: "JacksonMannSchoolGarden",
+        map: myMap
+      })
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(42.3556407, -71.1364847),
+        title: "PennimanRd.Garden",
+        map: myMap
+      })
+    //
 	  
 	  var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
 
