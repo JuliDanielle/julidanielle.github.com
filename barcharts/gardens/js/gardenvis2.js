@@ -11,6 +11,28 @@
         mapTypeId: google.maps.MapTypeId.ROADMAP // ROADMAP, SATELLITE, HYBRID, TERRAIN
       };
       var myMap = new google.maps.Map($("#map-canvas")[0],mapOptions);
+      
+    // Add in a marker:
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(42.3611199, -71.1466786),
+        title: "CharlesRiverCG",
+        map: myMap
+      })
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(42.3383955, -71.1569408),
+        title: "ChestnutHillReservoirGarden",
+        map: myMap
+      })
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(42.3644362, -71.1362815),
+        title: "Christian Herter Garden",
+        map: myMap
+      })
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(42.345578, -71.1433738),
+        title: "CommonwealthTenantsAssociationCG",
+        map: myMap
+      })
 	  
 	  var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
 
