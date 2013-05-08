@@ -2,19 +2,57 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
+   <!-- <style type="text/css">
       html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 700px; width: 700px; }
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgZLcBWuX-Oqp6cdqgGdd_PJ-7_7sZMRs&sensor=false">
-    </script>
+      body { height: 100%; margin: 0; padding: 0; }
+      #map-canvas { height: 700px; width: 700px; background-image:url("img/gardenmap.svg");}
+      .circles {margin-left:125px; margin-top:120px; }}
+    </style>-->
+    <link href="gardens.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700|Lemon' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgZLcBWuX-Oqp6cdqgGdd_PJ-7_7sZMRs&sensor=false"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/gardenlist.js"></script>
     <script src="js/gardenvis2.js"></script>
   </head>
   <body>
-    <div id="map-canvas"/>
+  	<div id="overlay"></div>
+  	<div id="top">
+  		<div id="parallelogram"></div>
+  		<h1>Boston</h1>
+  		<h2 id="one">Community Gardens</h2> <h2 id="two">vs. Public Housing</h2>
+  		<div id="container">
+    		<div id="key" style=" height: 250px; width: 300px; float: left; margin-top: 240px; margin-left: 50px; border-radius: 250px;">
+    			<div id="title">
+    				<p>Concentration of Public Housing in Area</p>
+    			</div>
+    			<div id="tv"></div>
+    			<div id="icons">
+    			  	<article>
+    					<img id="light" class="icon" src="img/icon-light.jpg" />
+    				</article>
+    				<article>
+    					<img id="medium" class="icon" src="img/icon-med.jpg" />
+    				</article>
+    				<article>
+    					<img id="heavy" class="icon" src="img/icon-heavy.jpg" />
+    				</article>
+    			</div>
+    			<div class="labels">
+    				<h3>Light</h3>
+    				<h3>Medium</h3>
+    				<h3>Heavy</h3>
+    			</div>
+    			<div id="dot"></div>
+    			<h4>Each dot is one community garden.</h4>
+    		</div>
+    		<div id="descrip">
+    			<p id="star">&#42;</p> <p>Community gardens are green spaces that are communally cultivated and cared for. They are the result of the shared collective effort of people working together.</p> 
+    		</div>
+  			<div id="map-container">
+  				<div id="map-canvas"></div>
+  			</div>
+  		</div>
+  	</div>
   </body>
 </html>

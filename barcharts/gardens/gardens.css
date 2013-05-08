@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+html { 
+	height: 100% 
+}
+body { 
+	background-color:rgb(17, 71, 52);
+	position:fixed;
+}
+#overlay {
+	background-image: url("img/grass.jpeg"); 
+	background-repeat:repeat;
+	margin-right:auto;
+	margin-left:auto; 
+	width: 1400px;
+	height:900px;
+	z-index:-200;
+	position:absolute;
+	opacity:.5;
+}
+#top {
+	height: 190px;
+	width:380px;
+	background-color:rgb(231, 196, 86);
+	position:relative;
+	padding-left:20px;
+	line-height:2.5em;
+}
+#parallelogram {
+	width: 415px;
+	height: 190px;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background: rgb(231, 196, 86);
+	position:absolute;
+}
+h1 {
+	font-family: 'Lemon', cursive;
+	font-size: 4.8em;
+	left:20px;
+	position:relative;
+	top:30px;
+	color:rgb(5, 124, 105);
+}
+h2 {
+	font-family: 'Lemon', cursive;
+	position:relative;
+	color:white;
+	opacity:.8;
+}
+#one {
+	top:50px;
+	font-size: 2.1em;
+	width:430px;
+	left:-3px;
+	}
+#two {
+	top:50px;
+	font-size: 1.7em;
+	}
+#container {
+	width:1350px;
+	position:relative;
+	margin: 0 auto;
+}
+#title {
+	position: relative;
+	top: 35px;
+	left: 5px;
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	font-size:1.2em;
+	text-align:center;
+	line-height:1.3em;
+	color: rgb(17, 71, 52);
+}
+#tv {
+  position: absolute;
+  width: 280px;
+  height: 250px;
+  margin: 20px 0;
+  background: rgb(218, 247, 158);
+  border-radius: 50% / 10%;
+  color: white;
+  text-align: center;
+  text-indent: .1em;
+  z-index:-100;
+  top:230px;
+  left:65px;
+  opacity:.9;
+}
+#tv:before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+#icons{
+	margin: 0 auto;
+	height: 70px;
+	position:relative;
+	top:60px;
+}
+.icon {
+	width:70px;
+	height:70px;
+	padding-left:25px;
+	float:left;
+}
+.labels{
+	margin: 0 auto;
+	height: 30px;
+	position:relative;
+	top:53px;
+}
+h3 {
+	width:70px;
+	padding-left:25px;
+	float:left;
+	text-align:center;
+	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	font-size:.9em;
+}
+h4 {
+	float: left;
+	text-align: left;
+	position: relative;
+	top: 40px;
+	left: 58px;
+}
+#dot{
+	width: 8px;
+	height: 8px;
+	background-color: orange;
+	border-radius: 25px;
+	top: 66px;
+	position: relative;
+	left: 40px;
+}
+#star {
+	position:absolute;
+	left:-10px;
+	top:2px;
+}
+#descrip {
+	float:left;
+	text-align:left;
+	font-family: 'Noto Serif', serif;
+	font-weight: 400;
+	font-size:.7em;
+	width:330px;
+	position:relative;
+	line-height:16px;
+	left:-330px;
+	top:80px;
+	color:white;
+	opacity:.6;
+}
+#map-container {
+	height: 700px; 
+	width: 700px; 
+	position:relative;
+	left:450px;
+	margin:0px 20px 20px 0;
+	top:-80px;
+}
+#map-canvas { 
+	height: 700px; 
+	width: 700px; 
+	background-image:url("img/gardenmap.svg");
+	position:absolute;
+	opacity:.8;
+}
+.circles {
+	margin-left:525px; 
+	margin-top:120px; 
+}
