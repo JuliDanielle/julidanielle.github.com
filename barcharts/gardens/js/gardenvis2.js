@@ -46,7 +46,7 @@ $(function() {
 		position:"absolute", width:8, height:8,
 		backgroundColor:"orange",
 		borderRadius:"25px",
-		left: 500-screenX, top: 500-screenY,
+		left: 530-screenX, top: 500-screenY,
 		opacity:0.7,
 	})
 	    .attr("title", coordinates ); // display title is coordinates
